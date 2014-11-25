@@ -41,7 +41,7 @@
             // 
             this.btnYararli.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnYararli.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnYararli.Location = new System.Drawing.Point(704, 313);
+            this.btnYararli.Location = new System.Drawing.Point(694, 313);
             this.btnYararli.Name = "btnYararli";
             this.btnYararli.Size = new System.Drawing.Size(250, 200);
             this.btnYararli.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             this.btnUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnUrun.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnUrun.Location = new System.Drawing.Point(704, 45);
+            this.btnUrun.Location = new System.Drawing.Point(694, 45);
             this.btnUrun.Name = "btnUrun";
             this.btnUrun.Size = new System.Drawing.Size(250, 200);
             this.btnUrun.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             this.btnIsci.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnIsci.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnIsci.Location = new System.Drawing.Point(379, 45);
+            this.btnIsci.Location = new System.Drawing.Point(369, 45);
             this.btnIsci.Name = "btnIsci";
             this.btnIsci.Size = new System.Drawing.Size(250, 200);
             this.btnIsci.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             this.btnSatis.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnSatis.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnSatis.Location = new System.Drawing.Point(379, 313);
+            this.btnSatis.Location = new System.Drawing.Point(369, 313);
             this.btnSatis.Name = "btnSatis";
             this.btnSatis.Size = new System.Drawing.Size(250, 200);
             this.btnSatis.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             this.btnTedarikci.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnTedarikci.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnTedarikci.Location = new System.Drawing.Point(45, 313);
+            this.btnTedarikci.Location = new System.Drawing.Point(35, 313);
             this.btnTedarikci.Name = "btnTedarikci";
             this.btnTedarikci.Size = new System.Drawing.Size(250, 200);
             this.btnTedarikci.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.btnMusteri.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnMusteri.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnMusteri.Location = new System.Drawing.Point(45, 45);
+            this.btnMusteri.Location = new System.Drawing.Point(35, 45);
             this.btnMusteri.Name = "btnMusteri";
             this.btnMusteri.Size = new System.Drawing.Size(250, 200);
             this.btnMusteri.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnAdmin.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnAdmin.Location = new System.Drawing.Point(804, 562);
+            this.btnAdmin.Location = new System.Drawing.Point(794, 562);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(150, 75);
             this.btnAdmin.TabIndex = 7;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.btnIsci);
             this.Controls.Add(this.btnUrun);
             this.Controls.Add(this.btnYararli);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenu";
             this.Text = "MENÜ";
             this.ResumeLayout(false);
