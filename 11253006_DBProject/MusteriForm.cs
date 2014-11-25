@@ -21,5 +21,30 @@ namespace _11253006_DBProject
         {
 
         }
+
+        private void btnMusteriEkle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMusteriSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMusteriGuncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnYenile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
