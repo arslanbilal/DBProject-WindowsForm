@@ -1,0 +1,9 @@
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\bin\Debug\11253006_DBProject.exe.config
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\bin\Debug\11253006_DBProject.exe
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\bin\Debug\11253006_DBProject.pdb
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\11253006_DBProject.csprojResolveAssemblyReference.cache
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\_11253006_DBProject.Properties.Resources.resources
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\11253006_DBProject.csproj.GenerateResource.Cache
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\11253006_DBProject.exe
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\11253006_DBProject.pdb
+c:\users\bilal\documents\visual studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\_11253006_DBProject.MainMenu.resources
