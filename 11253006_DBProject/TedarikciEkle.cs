@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace _11253006_DBProject
 {
-    public partial class UrunGuncelle : Form
+    public partial class TedarikciEkle : Form
     {
-        public UrunGuncelle()
+        public TedarikciEkle()
         {
             InitializeComponent();
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnIptal_Click(object sender, EventArgs e)
@@ -22,12 +27,7 @@ namespace _11253006_DBProject
 
         }
 
-        private void UrunGuncelle_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGuncelle_Click(object sender, EventArgs e)
+        private void TedarikciEkle_Load(object sender, EventArgs e)
         {
 
         }

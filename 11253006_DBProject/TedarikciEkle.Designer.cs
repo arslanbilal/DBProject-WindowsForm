@@ -1,6 +1,6 @@
 ﻿namespace _11253006_DBProject
 {
-    partial class MusteriGuncelle
+    partial class TedarikciEkle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxİletisimİsmi = new System.Windows.Forms.TextBox();
-            this.textBoxAdres = new System.Windows.Forms.TextBox();
-            this.textBoxTelefon = new System.Windows.Forms.TextBox();
-            this.textBoxUlke = new System.Windows.Forms.TextBox();
-            this.textBoxSehir = new System.Windows.Forms.TextBox();
-            this.textBoxFirmaAdi = new System.Windows.Forms.TextBox();
+            this.txtBoxTedarikciİletisimİsmi = new System.Windows.Forms.TextBox();
+            this.textBoxTedarikciAdres = new System.Windows.Forms.TextBox();
+            this.textBoxTedarikciTelefon = new System.Windows.Forms.TextBox();
+            this.textBoxTedarikciUlke = new System.Windows.Forms.TextBox();
+            this.textBoxTedarikciSehir = new System.Windows.Forms.TextBox();
+            this.textBoxTedarikciAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
-            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,71 +44,71 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtBoxİletisimİsmi
+            // txtBoxTedarikciİletisimİsmi
             // 
-            this.txtBoxİletisimİsmi.Location = new System.Drawing.Point(239, 118);
-            this.txtBoxİletisimİsmi.Name = "txtBoxİletisimİsmi";
-            this.txtBoxİletisimİsmi.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxİletisimİsmi.TabIndex = 29;
+            this.txtBoxTedarikciİletisimİsmi.Location = new System.Drawing.Point(256, 115);
+            this.txtBoxTedarikciİletisimİsmi.Name = "txtBoxTedarikciİletisimİsmi";
+            this.txtBoxTedarikciİletisimİsmi.Size = new System.Drawing.Size(194, 22);
+            this.txtBoxTedarikciİletisimİsmi.TabIndex = 43;
             // 
-            // textBoxAdres
+            // textBoxTedarikciAdres
             // 
-            this.textBoxAdres.Location = new System.Drawing.Point(239, 198);
-            this.textBoxAdres.Name = "textBoxAdres";
-            this.textBoxAdres.Size = new System.Drawing.Size(194, 22);
-            this.textBoxAdres.TabIndex = 28;
+            this.textBoxTedarikciAdres.Location = new System.Drawing.Point(256, 195);
+            this.textBoxTedarikciAdres.Name = "textBoxTedarikciAdres";
+            this.textBoxTedarikciAdres.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTedarikciAdres.TabIndex = 42;
             // 
-            // textBoxTelefon
+            // textBoxTedarikciTelefon
             // 
-            this.textBoxTelefon.Location = new System.Drawing.Point(239, 448);
-            this.textBoxTelefon.Name = "textBoxTelefon";
-            this.textBoxTelefon.Size = new System.Drawing.Size(194, 22);
-            this.textBoxTelefon.TabIndex = 27;
+            this.textBoxTedarikciTelefon.Location = new System.Drawing.Point(256, 445);
+            this.textBoxTedarikciTelefon.Name = "textBoxTedarikciTelefon";
+            this.textBoxTedarikciTelefon.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTedarikciTelefon.TabIndex = 41;
             // 
-            // textBoxUlke
+            // textBoxTedarikciUlke
             // 
-            this.textBoxUlke.Location = new System.Drawing.Point(239, 368);
-            this.textBoxUlke.Name = "textBoxUlke";
-            this.textBoxUlke.Size = new System.Drawing.Size(194, 22);
-            this.textBoxUlke.TabIndex = 26;
+            this.textBoxTedarikciUlke.Location = new System.Drawing.Point(256, 365);
+            this.textBoxTedarikciUlke.Name = "textBoxTedarikciUlke";
+            this.textBoxTedarikciUlke.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTedarikciUlke.TabIndex = 40;
             // 
-            // textBoxSehir
+            // textBoxTedarikciSehir
             // 
-            this.textBoxSehir.Location = new System.Drawing.Point(239, 278);
-            this.textBoxSehir.Name = "textBoxSehir";
-            this.textBoxSehir.Size = new System.Drawing.Size(194, 22);
-            this.textBoxSehir.TabIndex = 25;
+            this.textBoxTedarikciSehir.Location = new System.Drawing.Point(256, 275);
+            this.textBoxTedarikciSehir.Name = "textBoxTedarikciSehir";
+            this.textBoxTedarikciSehir.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTedarikciSehir.TabIndex = 39;
             // 
-            // textBoxFirmaAdi
+            // textBoxTedarikciAdi
             // 
-            this.textBoxFirmaAdi.Location = new System.Drawing.Point(239, 38);
-            this.textBoxFirmaAdi.Name = "textBoxFirmaAdi";
-            this.textBoxFirmaAdi.Size = new System.Drawing.Size(194, 22);
-            this.textBoxFirmaAdi.TabIndex = 24;
+            this.textBoxTedarikciAdi.Location = new System.Drawing.Point(256, 35);
+            this.textBoxTedarikciAdi.Name = "textBoxTedarikciAdi";
+            this.textBoxTedarikciAdi.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTedarikciAdi.TabIndex = 38;
             // 
             // btnIptal
             // 
             this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnIptal.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIptal.Location = new System.Drawing.Point(262, 545);
+            this.btnIptal.Location = new System.Drawing.Point(279, 542);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(150, 75);
-            this.btnIptal.TabIndex = 23;
+            this.btnIptal.TabIndex = 37;
             this.btnIptal.Text = "İPTAL";
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
-            // btnGuncelle
+            // btnEkle
             // 
-            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGuncelle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnGuncelle.Location = new System.Drawing.Point(45, 545);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(150, 75);
-            this.btnGuncelle.TabIndex = 22;
-            this.btnGuncelle.Text = "GÜNCELLE";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
-            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnEkle.Location = new System.Drawing.Point(62, 542);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(150, 75);
+            this.btnEkle.TabIndex = 36;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // label3
             // 
@@ -116,10 +116,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(12, 445);
+            this.label3.Location = new System.Drawing.Point(29, 442);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 25);
-            this.label3.TabIndex = 21;
+            this.label3.TabIndex = 35;
             this.label3.Text = "TELEFON:";
             // 
             // label2
@@ -128,10 +128,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(12, 365);
+            this.label2.Location = new System.Drawing.Point(29, 362);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 25);
-            this.label2.TabIndex = 20;
+            this.label2.TabIndex = 34;
             this.label2.Text = "ÜLKE:";
             // 
             // label6
@@ -140,10 +140,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
-            this.label6.Location = new System.Drawing.Point(12, 115);
+            this.label6.Location = new System.Drawing.Point(29, 112);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(161, 25);
-            this.label6.TabIndex = 19;
+            this.label6.TabIndex = 33;
             this.label6.Text = "İLETİŞİM İSMİ:";
             // 
             // label5
@@ -152,10 +152,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(12, 195);
+            this.label5.Location = new System.Drawing.Point(29, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 25);
-            this.label5.TabIndex = 18;
+            this.label5.TabIndex = 32;
             this.label5.Text = "ADRESİ:";
             // 
             // label4
@@ -164,10 +164,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(12, 275);
+            this.label4.Location = new System.Drawing.Point(29, 272);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 25);
-            this.label4.TabIndex = 17;
+            this.label4.TabIndex = 31;
             this.label4.Text = "ŞEHİR:";
             // 
             // label1
@@ -176,27 +176,28 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(12, 35);
+            this.label1.Location = new System.Drawing.Point(29, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "FİRMA ADI:";
+            this.label1.Size = new System.Drawing.Size(176, 25);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "TEDARİKÇİ ADI:";
             // 
-            // MusteriGuncelle
+            // TedarikciEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
-            this.Controls.Add(this.txtBoxİletisimİsmi);
-            this.Controls.Add(this.textBoxAdres);
-            this.Controls.Add(this.textBoxTelefon);
-            this.Controls.Add(this.textBoxUlke);
-            this.Controls.Add(this.textBoxSehir);
-            this.Controls.Add(this.textBoxFirmaAdi);
+            this.Controls.Add(this.txtBoxTedarikciİletisimİsmi);
+            this.Controls.Add(this.textBoxTedarikciAdres);
+            this.Controls.Add(this.textBoxTedarikciTelefon);
+            this.Controls.Add(this.textBoxTedarikciUlke);
+            this.Controls.Add(this.textBoxTedarikciSehir);
+            this.Controls.Add(this.textBoxTedarikciAdi);
             this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -204,8 +205,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "MusteriGuncelle";
-            this.Text = "MusteriGuncelle";
+            this.Name = "TedarikciEkle";
+            this.Text = "TEDARİKÇİ EKLE";
+            this.Load += new System.EventHandler(this.TedarikciEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,14 +215,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxİletisimİsmi;
-        private System.Windows.Forms.TextBox textBoxAdres;
-        private System.Windows.Forms.TextBox textBoxTelefon;
-        private System.Windows.Forms.TextBox textBoxUlke;
-        private System.Windows.Forms.TextBox textBoxSehir;
-        private System.Windows.Forms.TextBox textBoxFirmaAdi;
+        private System.Windows.Forms.TextBox txtBoxTedarikciİletisimİsmi;
+        private System.Windows.Forms.TextBox textBoxTedarikciAdres;
+        private System.Windows.Forms.TextBox textBoxTedarikciTelefon;
+        private System.Windows.Forms.TextBox textBoxTedarikciUlke;
+        private System.Windows.Forms.TextBox textBoxTedarikciSehir;
+        private System.Windows.Forms.TextBox textBoxTedarikciAdi;
         private System.Windows.Forms.Button btnIptal;
-        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;

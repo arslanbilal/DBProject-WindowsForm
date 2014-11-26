@@ -31,10 +31,9 @@
             this.txtBoxSehir = new System.Windows.Forms.TextBox();
             this.textBoxMaas = new System.Windows.Forms.TextBox();
             this.textBoxDogumTarihi = new System.Windows.Forms.TextBox();
-            this.textBoxDepartman = new System.Windows.Forms.TextBox();
             this.textBoxIsciAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
-            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxGirisTarihi = new System.Windows.Forms.TextBox();
+            this.comboBoxDepartman = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtBoxSehir
@@ -65,13 +65,6 @@
             this.textBoxDogumTarihi.Size = new System.Drawing.Size(194, 22);
             this.textBoxDogumTarihi.TabIndex = 26;
             // 
-            // textBoxDepartman
-            // 
-            this.textBoxDepartman.Location = new System.Drawing.Point(256, 275);
-            this.textBoxDepartman.Name = "textBoxDepartman";
-            this.textBoxDepartman.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDepartman.TabIndex = 25;
-            // 
             // textBoxIsciAdi
             // 
             this.textBoxIsciAdi.Location = new System.Drawing.Point(256, 35);
@@ -91,17 +84,17 @@
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
-            // btnKaydet
+            // btnEkle
             // 
-            this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnKaydet.Location = new System.Drawing.Point(62, 542);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(150, 75);
-            this.btnKaydet.TabIndex = 22;
-            this.btnKaydet.Text = "EKLE";
-            this.btnKaydet.UseVisualStyleBackColor = true;
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnEkle.Location = new System.Drawing.Point(62, 542);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(150, 75);
+            this.btnEkle.TabIndex = 22;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // label2
             // 
@@ -182,6 +175,14 @@
             this.textBoxGirisTarihi.Size = new System.Drawing.Size(194, 22);
             this.textBoxGirisTarihi.TabIndex = 27;
             // 
+            // comboBoxDepartman
+            // 
+            this.comboBoxDepartman.FormattingEnabled = true;
+            this.comboBoxDepartman.Location = new System.Drawing.Point(256, 271);
+            this.comboBoxDepartman.Name = "comboBoxDepartman";
+            this.comboBoxDepartman.Size = new System.Drawing.Size(193, 24);
+            this.comboBoxDepartman.TabIndex = 30;
+            // 
             // IsciEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,14 +190,14 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
+            this.Controls.Add(this.comboBoxDepartman);
             this.Controls.Add(this.txtBoxSehir);
             this.Controls.Add(this.textBoxMaas);
             this.Controls.Add(this.textBoxGirisTarihi);
             this.Controls.Add(this.textBoxDogumTarihi);
-            this.Controls.Add(this.textBoxDepartman);
             this.Controls.Add(this.textBoxIsciAdi);
             this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnKaydet);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -206,6 +207,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "IsciEkle";
             this.Text = "İŞÇİ EKLE";
+            this.Load += new System.EventHandler(this.IsciEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,10 +218,9 @@
         private System.Windows.Forms.TextBox txtBoxSehir;
         private System.Windows.Forms.TextBox textBoxMaas;
         private System.Windows.Forms.TextBox textBoxDogumTarihi;
-        private System.Windows.Forms.TextBox textBoxDepartman;
         private System.Windows.Forms.TextBox textBoxIsciAdi;
         private System.Windows.Forms.Button btnIptal;
-        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -227,5 +228,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxGirisTarihi;
+        private System.Windows.Forms.ComboBox comboBoxDepartman;
     }
 }

@@ -17,17 +17,17 @@ namespace _11253006_DBProject
             InitializeComponent();
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnIptal_Click(object sender, EventArgs e)
         {
 
         }
 
         private void MusteriEkle_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
         {
 
         }

@@ -32,16 +32,16 @@
             this.textBoxMaas = new System.Windows.Forms.TextBox();
             this.textBoxGirisTarihi = new System.Windows.Forms.TextBox();
             this.textBoxDogumTarihi = new System.Windows.Forms.TextBox();
-            this.textBoxDepartman = new System.Windows.Forms.TextBox();
             this.textBoxIsciAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
-            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxDepartman = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtBoxSehir
@@ -72,13 +72,6 @@
             this.textBoxDogumTarihi.Size = new System.Drawing.Size(194, 22);
             this.textBoxDogumTarihi.TabIndex = 40;
             // 
-            // textBoxDepartman
-            // 
-            this.textBoxDepartman.Location = new System.Drawing.Point(256, 275);
-            this.textBoxDepartman.Name = "textBoxDepartman";
-            this.textBoxDepartman.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDepartman.TabIndex = 39;
-            // 
             // textBoxIsciAdi
             // 
             this.textBoxIsciAdi.Location = new System.Drawing.Point(256, 35);
@@ -98,17 +91,17 @@
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
-            // btnKaydet
+            // btnGuncelle
             // 
-            this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnKaydet.Location = new System.Drawing.Point(62, 542);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(150, 75);
-            this.btnKaydet.TabIndex = 36;
-            this.btnKaydet.Text = "GÜNCELLE";
-            this.btnKaydet.UseVisualStyleBackColor = true;
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            this.btnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGuncelle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnGuncelle.Location = new System.Drawing.Point(62, 542);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(150, 75);
+            this.btnGuncelle.TabIndex = 36;
+            this.btnGuncelle.Text = "GÜNCELLE";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // label3
             // 
@@ -166,9 +159,9 @@
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.Location = new System.Drawing.Point(29, 272);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 25);
+            this.label4.Size = new System.Drawing.Size(153, 25);
             this.label4.TabIndex = 31;
-            this.label4.Text = "DEPARTMAN";
+            this.label4.Text = "DEPARTMAN:";
             // 
             // label1
             // 
@@ -182,6 +175,14 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "İŞÇİ ADI";
             // 
+            // comboBoxDepartman
+            // 
+            this.comboBoxDepartman.FormattingEnabled = true;
+            this.comboBoxDepartman.Location = new System.Drawing.Point(256, 273);
+            this.comboBoxDepartman.Name = "comboBoxDepartman";
+            this.comboBoxDepartman.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxDepartman.TabIndex = 44;
+            // 
             // IsciGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -190,14 +191,14 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
+            this.Controls.Add(this.comboBoxDepartman);
             this.Controls.Add(this.txtBoxSehir);
             this.Controls.Add(this.textBoxMaas);
             this.Controls.Add(this.textBoxGirisTarihi);
             this.Controls.Add(this.textBoxDogumTarihi);
-            this.Controls.Add(this.textBoxDepartman);
             this.Controls.Add(this.textBoxIsciAdi);
             this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnKaydet);
+            this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -218,15 +219,15 @@
         private System.Windows.Forms.TextBox textBoxMaas;
         private System.Windows.Forms.TextBox textBoxGirisTarihi;
         private System.Windows.Forms.TextBox textBoxDogumTarihi;
-        private System.Windows.Forms.TextBox textBoxDepartman;
         private System.Windows.Forms.TextBox textBoxIsciAdi;
         private System.Windows.Forms.Button btnIptal;
-        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxDepartman;
     }
 }

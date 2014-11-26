@@ -34,7 +34,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.btnIptal = new System.Windows.Forms.Button();
             this.textBoxFirmaAdi = new System.Windows.Forms.TextBox();
             this.textBoxSehir = new System.Windows.Forms.TextBox();
@@ -116,17 +116,16 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "TELEFON:";
             // 
-            // btnKaydet
+            // btnEkle
             // 
-            this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnKaydet.Location = new System.Drawing.Point(45, 545);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(150, 75);
-            this.btnKaydet.TabIndex = 8;
-            this.btnKaydet.Text = "EKLE";
-            this.btnKaydet.UseVisualStyleBackColor = true;
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnEkle.Location = new System.Drawing.Point(45, 545);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(150, 75);
+            this.btnEkle.TabIndex = 8;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
             // 
             // btnIptal
             // 
@@ -197,7 +196,7 @@
             this.Controls.Add(this.textBoxSehir);
             this.Controls.Add(this.textBoxFirmaAdi);
             this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnKaydet);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -221,7 +220,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnIptal;
         private System.Windows.Forms.TextBox textBoxFirmaAdi;
         private System.Windows.Forms.TextBox textBoxSehir;

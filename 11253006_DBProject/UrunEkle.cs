@@ -22,12 +22,12 @@ namespace _11253006_DBProject
 
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
+        private void btnIptal_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnIptal_Click(object sender, EventArgs e)
+        private void btnEkle_Click(object sender, EventArgs e)
         {
 
         }

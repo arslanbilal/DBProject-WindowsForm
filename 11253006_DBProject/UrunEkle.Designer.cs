@@ -28,26 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxUrunKategori = new System.Windows.Forms.TextBox();
             this.textBoxUrunTedarikci = new System.Windows.Forms.TextBox();
             this.textBoxUrunAdet = new System.Windows.Forms.TextBox();
             this.textBoxUrunUcret = new System.Windows.Forms.TextBox();
             this.textBoxUrunAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
-            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxKategori = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // txtBoxUrunKategori
-            // 
-            this.txtBoxUrunKategori.Location = new System.Drawing.Point(256, 115);
-            this.txtBoxUrunKategori.Name = "txtBoxUrunKategori";
-            this.txtBoxUrunKategori.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxUrunKategori.TabIndex = 29;
             // 
             // textBoxUrunTedarikci
             // 
@@ -89,17 +82,17 @@
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
-            // btnKaydet
+            // btnEkle
             // 
-            this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnKaydet.Location = new System.Drawing.Point(62, 542);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(150, 75);
-            this.btnKaydet.TabIndex = 22;
-            this.btnKaydet.Text = "EKLE";
-            this.btnKaydet.UseVisualStyleBackColor = true;
-            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnEkle.Location = new System.Drawing.Point(62, 542);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(150, 75);
+            this.btnEkle.TabIndex = 22;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // label2
             // 
@@ -161,6 +154,14 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "ÜRÜN ADI:";
             // 
+            // comboBoxKategori
+            // 
+            this.comboBoxKategori.FormattingEnabled = true;
+            this.comboBoxKategori.Location = new System.Drawing.Point(256, 112);
+            this.comboBoxKategori.Name = "comboBoxKategori";
+            this.comboBoxKategori.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxKategori.TabIndex = 42;
+            // 
             // UrunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -168,13 +169,13 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
-            this.Controls.Add(this.txtBoxUrunKategori);
+            this.Controls.Add(this.comboBoxKategori);
             this.Controls.Add(this.textBoxUrunTedarikci);
             this.Controls.Add(this.textBoxUrunAdet);
             this.Controls.Add(this.textBoxUrunUcret);
             this.Controls.Add(this.textBoxUrunAdi);
             this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnKaydet);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -191,17 +192,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxUrunKategori;
         private System.Windows.Forms.TextBox textBoxUrunTedarikci;
         private System.Windows.Forms.TextBox textBoxUrunAdet;
         private System.Windows.Forms.TextBox textBoxUrunUcret;
         private System.Windows.Forms.TextBox textBoxUrunAdi;
         private System.Windows.Forms.Button btnIptal;
-        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxKategori;
     }
 }
