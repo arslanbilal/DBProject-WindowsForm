@@ -56,13 +56,13 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 139);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(958, 502);
+            this.dataGridView1.Size = new System.Drawing.Size(1058, 502);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnYenile
             // 
             this.btnYenile.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnYenile.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnYenile.ForeColor = System.Drawing.Color.Firebrick;
             this.btnYenile.Location = new System.Drawing.Point(12, 92);
             this.btnYenile.Name = "btnYenile";
             this.btnYenile.Size = new System.Drawing.Size(75, 25);
@@ -74,7 +74,7 @@
             // btnMusteriEkle
             // 
             this.btnMusteriEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMusteriEkle.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnMusteriEkle.ForeColor = System.Drawing.Color.Firebrick;
             this.btnMusteriEkle.Location = new System.Drawing.Point(101, 12);
             this.btnMusteriEkle.Name = "btnMusteriEkle";
             this.btnMusteriEkle.Size = new System.Drawing.Size(182, 49);
@@ -86,7 +86,7 @@
             // btnMusteriSil
             // 
             this.btnMusteriSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMusteriSil.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnMusteriSil.ForeColor = System.Drawing.Color.Firebrick;
             this.btnMusteriSil.Location = new System.Drawing.Point(101, 68);
             this.btnMusteriSil.Name = "btnMusteriSil";
             this.btnMusteriSil.Size = new System.Drawing.Size(182, 49);
@@ -98,7 +98,7 @@
             // btnMusteriGuncelle
             // 
             this.btnMusteriGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnMusteriGuncelle.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnMusteriGuncelle.ForeColor = System.Drawing.Color.Firebrick;
             this.btnMusteriGuncelle.Location = new System.Drawing.Point(301, 12);
             this.btnMusteriGuncelle.Name = "btnMusteriGuncelle";
             this.btnMusteriGuncelle.Size = new System.Drawing.Size(182, 105);
@@ -118,10 +118,10 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.shapeContainer1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(499, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(452, 105);
+            this.groupBox1.Size = new System.Drawing.Size(471, 105);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Arama";
@@ -191,7 +191,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(446, 79);
+            this.shapeContainer1.Size = new System.Drawing.Size(465, 79);
             this.shapeContainer1.TabIndex = 8;
             this.shapeContainer1.TabStop = false;
             // 
@@ -213,6 +213,7 @@
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnBack.ForeColor = System.Drawing.Color.Firebrick;
             this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 66);
@@ -225,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(982, 653);
+            this.ClientSize = new System.Drawing.Size(1082, 653);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnMusteriGuncelle);
             this.Controls.Add(this.btnMusteriSil);

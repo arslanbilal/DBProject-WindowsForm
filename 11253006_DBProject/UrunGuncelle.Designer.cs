@@ -1,6 +1,6 @@
 ﻿namespace _11253006_DBProject
 {
-    partial class IsciEkle
+    partial class UrunGuncelle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxSehir = new System.Windows.Forms.TextBox();
-            this.textBoxMaas = new System.Windows.Forms.TextBox();
-            this.textBoxDogumTarihi = new System.Windows.Forms.TextBox();
-            this.textBoxDepartman = new System.Windows.Forms.TextBox();
-            this.textBoxIsciAdi = new System.Windows.Forms.TextBox();
+            this.txtBoxUrunKategori = new System.Windows.Forms.TextBox();
+            this.textBoxUrunTedarikci = new System.Windows.Forms.TextBox();
+            this.textBoxUrunAdet = new System.Windows.Forms.TextBox();
+            this.textBoxUrunUcret = new System.Windows.Forms.TextBox();
+            this.textBoxUrunAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,44 +40,42 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxGirisTarihi = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtBoxSehir
+            // txtBoxUrunKategori
             // 
-            this.txtBoxSehir.Location = new System.Drawing.Point(256, 115);
-            this.txtBoxSehir.Name = "txtBoxSehir";
-            this.txtBoxSehir.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxSehir.TabIndex = 29;
+            this.txtBoxUrunKategori.Location = new System.Drawing.Point(256, 115);
+            this.txtBoxUrunKategori.Name = "txtBoxUrunKategori";
+            this.txtBoxUrunKategori.Size = new System.Drawing.Size(194, 22);
+            this.txtBoxUrunKategori.TabIndex = 41;
             // 
-            // textBoxMaas
+            // textBoxUrunTedarikci
             // 
-            this.textBoxMaas.Location = new System.Drawing.Point(256, 195);
-            this.textBoxMaas.Name = "textBoxMaas";
-            this.textBoxMaas.Size = new System.Drawing.Size(194, 22);
-            this.textBoxMaas.TabIndex = 28;
+            this.textBoxUrunTedarikci.Location = new System.Drawing.Point(256, 195);
+            this.textBoxUrunTedarikci.Name = "textBoxUrunTedarikci";
+            this.textBoxUrunTedarikci.Size = new System.Drawing.Size(194, 22);
+            this.textBoxUrunTedarikci.TabIndex = 40;
             // 
-            // textBoxDogumTarihi
+            // textBoxUrunAdet
             // 
-            this.textBoxDogumTarihi.Location = new System.Drawing.Point(256, 365);
-            this.textBoxDogumTarihi.Name = "textBoxDogumTarihi";
-            this.textBoxDogumTarihi.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDogumTarihi.TabIndex = 26;
+            this.textBoxUrunAdet.Location = new System.Drawing.Point(256, 365);
+            this.textBoxUrunAdet.Name = "textBoxUrunAdet";
+            this.textBoxUrunAdet.Size = new System.Drawing.Size(194, 22);
+            this.textBoxUrunAdet.TabIndex = 39;
             // 
-            // textBoxDepartman
+            // textBoxUrunUcret
             // 
-            this.textBoxDepartman.Location = new System.Drawing.Point(256, 275);
-            this.textBoxDepartman.Name = "textBoxDepartman";
-            this.textBoxDepartman.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDepartman.TabIndex = 25;
+            this.textBoxUrunUcret.Location = new System.Drawing.Point(256, 275);
+            this.textBoxUrunUcret.Name = "textBoxUrunUcret";
+            this.textBoxUrunUcret.Size = new System.Drawing.Size(194, 22);
+            this.textBoxUrunUcret.TabIndex = 38;
             // 
-            // textBoxIsciAdi
+            // textBoxUrunAdi
             // 
-            this.textBoxIsciAdi.Location = new System.Drawing.Point(256, 35);
-            this.textBoxIsciAdi.Name = "textBoxIsciAdi";
-            this.textBoxIsciAdi.Size = new System.Drawing.Size(194, 22);
-            this.textBoxIsciAdi.TabIndex = 24;
+            this.textBoxUrunAdi.Location = new System.Drawing.Point(256, 35);
+            this.textBoxUrunAdi.Name = "textBoxUrunAdi";
+            this.textBoxUrunAdi.Size = new System.Drawing.Size(194, 22);
+            this.textBoxUrunAdi.TabIndex = 37;
             // 
             // btnIptal
             // 
@@ -86,7 +84,7 @@
             this.btnIptal.Location = new System.Drawing.Point(279, 542);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(150, 75);
-            this.btnIptal.TabIndex = 23;
+            this.btnIptal.TabIndex = 36;
             this.btnIptal.Text = "İPTAL";
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
@@ -98,8 +96,8 @@
             this.btnKaydet.Location = new System.Drawing.Point(62, 542);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(150, 75);
-            this.btnKaydet.TabIndex = 22;
-            this.btnKaydet.Text = "EKLE";
+            this.btnKaydet.TabIndex = 35;
+            this.btnKaydet.Text = "GÜNCELLE";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -111,9 +109,9 @@
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
             this.label2.Location = new System.Drawing.Point(29, 362);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 25);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "DOĞUM TARİHİ:";
+            this.label2.Size = new System.Drawing.Size(84, 25);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "ADEDİ:";
             // 
             // label6
             // 
@@ -123,9 +121,9 @@
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
             this.label6.Location = new System.Drawing.Point(29, 112);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 25);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "ŞEHİR:";
+            this.label6.Size = new System.Drawing.Size(195, 25);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "ÜRÜN KATEGORİ:";
             // 
             // label5
             // 
@@ -135,9 +133,9 @@
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.Location = new System.Drawing.Point(29, 192);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 25);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "MAAŞI:";
+            this.label5.Size = new System.Drawing.Size(155, 25);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "TEDARİKÇİSİ:";
             // 
             // label4
             // 
@@ -147,9 +145,9 @@
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.Location = new System.Drawing.Point(29, 272);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 25);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "DEPARTMAN:";
+            this.label4.Size = new System.Drawing.Size(98, 25);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "ÜCRETİ:";
             // 
             // label1
             // 
@@ -159,53 +157,33 @@
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(29, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "İŞÇİ ADI:";
+            this.label1.Size = new System.Drawing.Size(120, 25);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "ÜRÜN ADI:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(29, 442);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 25);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "GİRİŞ TARİHİ:";
-            // 
-            // textBoxGirisTarihi
-            // 
-            this.textBoxGirisTarihi.Location = new System.Drawing.Point(256, 445);
-            this.textBoxGirisTarihi.Name = "textBoxGirisTarihi";
-            this.textBoxGirisTarihi.Size = new System.Drawing.Size(194, 22);
-            this.textBoxGirisTarihi.TabIndex = 27;
-            // 
-            // IsciEkle
+            // UrunGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
-            this.Controls.Add(this.txtBoxSehir);
-            this.Controls.Add(this.textBoxMaas);
-            this.Controls.Add(this.textBoxGirisTarihi);
-            this.Controls.Add(this.textBoxDogumTarihi);
-            this.Controls.Add(this.textBoxDepartman);
-            this.Controls.Add(this.textBoxIsciAdi);
+            this.Controls.Add(this.txtBoxUrunKategori);
+            this.Controls.Add(this.textBoxUrunTedarikci);
+            this.Controls.Add(this.textBoxUrunAdet);
+            this.Controls.Add(this.textBoxUrunUcret);
+            this.Controls.Add(this.textBoxUrunAdi);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.btnKaydet);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "IsciEkle";
-            this.Text = "İŞÇİ EKLE";
+            this.Name = "UrunGuncelle";
+            this.Text = "ÜRÜN GÜNCELLE";
+            this.Load += new System.EventHandler(this.UrunGuncelle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,11 +191,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxSehir;
-        private System.Windows.Forms.TextBox textBoxMaas;
-        private System.Windows.Forms.TextBox textBoxDogumTarihi;
-        private System.Windows.Forms.TextBox textBoxDepartman;
-        private System.Windows.Forms.TextBox textBoxIsciAdi;
+        private System.Windows.Forms.TextBox txtBoxUrunKategori;
+        private System.Windows.Forms.TextBox textBoxUrunTedarikci;
+        private System.Windows.Forms.TextBox textBoxUrunAdet;
+        private System.Windows.Forms.TextBox textBoxUrunUcret;
+        private System.Windows.Forms.TextBox textBoxUrunAdi;
         private System.Windows.Forms.Button btnIptal;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Label label2;
@@ -225,7 +203,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxGirisTarihi;
     }
 }

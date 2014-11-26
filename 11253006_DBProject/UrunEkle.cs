@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace _11253006_DBProject
 {
-    public partial class MusteriEkle : Form
+    public partial class UrunEkle : Form
     {
-        public MusteriEkle()
+        public UrunEkle()
         {
             InitializeComponent();
+        }
+
+        private void UrunEkle_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
@@ -23,11 +28,6 @@ namespace _11253006_DBProject
         }
 
         private void btnIptal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MusteriEkle_Load(object sender, EventArgs e)
         {
 
         }

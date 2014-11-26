@@ -89,7 +89,7 @@
             // btnIptal
             // 
             this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIptal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnIptal.ForeColor = System.Drawing.Color.Firebrick;
             this.btnIptal.Location = new System.Drawing.Point(262, 545);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(150, 75);
@@ -101,12 +101,12 @@
             // btnKaydet
             // 
             this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydet.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnKaydet.ForeColor = System.Drawing.Color.Firebrick;
             this.btnKaydet.Location = new System.Drawing.Point(45, 545);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(150, 75);
             this.btnKaydet.TabIndex = 22;
-            this.btnKaydet.Text = "KAYDET";
+            this.btnKaydet.Text = "GÜNCELLE";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -115,7 +115,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label3.ForeColor = System.Drawing.Color.Firebrick;
             this.label3.Location = new System.Drawing.Point(12, 445);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 25);
@@ -127,7 +127,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label2.ForeColor = System.Drawing.Color.Firebrick;
             this.label2.Location = new System.Drawing.Point(12, 365);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 25);
@@ -139,7 +139,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label6.ForeColor = System.Drawing.Color.Firebrick;
             this.label6.Location = new System.Drawing.Point(12, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(161, 25);
@@ -151,7 +151,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.Location = new System.Drawing.Point(12, 195);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 25);
@@ -163,7 +163,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label4.ForeColor = System.Drawing.Color.Firebrick;
             this.label4.Location = new System.Drawing.Point(12, 275);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 25);
@@ -175,7 +175,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(12, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 25);
@@ -186,7 +186,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg;
+            this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
             this.Controls.Add(this.txtBoxİletisimİsmi);
             this.Controls.Add(this.textBoxAdres);

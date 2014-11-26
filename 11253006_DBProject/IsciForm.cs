@@ -46,5 +46,22 @@ namespace _11253006_DBProject
         {
 
         }
+
+        private void btnDepartmanEkle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDepartmanGuncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDepartmanSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

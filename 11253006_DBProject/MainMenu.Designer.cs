@@ -40,8 +40,8 @@
             // btnYararli
             // 
             this.btnYararli.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnYararli.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnYararli.Location = new System.Drawing.Point(694, 313);
+            this.btnYararli.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnYararli.Location = new System.Drawing.Point(794, 315);
             this.btnYararli.Name = "btnYararli";
             this.btnYararli.Size = new System.Drawing.Size(250, 200);
             this.btnYararli.TabIndex = 1;
@@ -52,8 +52,8 @@
             // btnUrun
             // 
             this.btnUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnUrun.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnUrun.Location = new System.Drawing.Point(694, 45);
+            this.btnUrun.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnUrun.Location = new System.Drawing.Point(794, 45);
             this.btnUrun.Name = "btnUrun";
             this.btnUrun.Size = new System.Drawing.Size(250, 200);
             this.btnUrun.TabIndex = 2;
@@ -64,8 +64,8 @@
             // btnIsci
             // 
             this.btnIsci.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnIsci.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnIsci.Location = new System.Drawing.Point(369, 45);
+            this.btnIsci.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnIsci.Location = new System.Drawing.Point(421, 45);
             this.btnIsci.Name = "btnIsci";
             this.btnIsci.Size = new System.Drawing.Size(250, 200);
             this.btnIsci.TabIndex = 3;
@@ -76,8 +76,8 @@
             // btnSatis
             // 
             this.btnSatis.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnSatis.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnSatis.Location = new System.Drawing.Point(369, 313);
+            this.btnSatis.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnSatis.Location = new System.Drawing.Point(421, 315);
             this.btnSatis.Name = "btnSatis";
             this.btnSatis.Size = new System.Drawing.Size(250, 200);
             this.btnSatis.TabIndex = 4;
@@ -88,8 +88,8 @@
             // btnTedarikci
             // 
             this.btnTedarikci.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnTedarikci.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnTedarikci.Location = new System.Drawing.Point(35, 313);
+            this.btnTedarikci.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnTedarikci.Location = new System.Drawing.Point(35, 315);
             this.btnTedarikci.Name = "btnTedarikci";
             this.btnTedarikci.Size = new System.Drawing.Size(250, 200);
             this.btnTedarikci.TabIndex = 5;
@@ -100,7 +100,7 @@
             // btnMusteri
             // 
             this.btnMusteri.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnMusteri.ForeColor = System.Drawing.Color.OrangeRed;
+            this.btnMusteri.ForeColor = System.Drawing.Color.Firebrick;
             this.btnMusteri.Location = new System.Drawing.Point(35, 45);
             this.btnMusteri.Name = "btnMusteri";
             this.btnMusteri.Size = new System.Drawing.Size(250, 200);
@@ -112,8 +112,8 @@
             // btnAdmin
             // 
             this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnAdmin.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btnAdmin.Location = new System.Drawing.Point(794, 562);
+            this.btnAdmin.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnAdmin.Location = new System.Drawing.Point(894, 566);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(150, 75);
             this.btnAdmin.TabIndex = 7;
@@ -124,7 +124,8 @@
             // MainMenu
             // 
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(978, 649);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1082, 653);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnMusteri);
             this.Controls.Add(this.btnTedarikci);

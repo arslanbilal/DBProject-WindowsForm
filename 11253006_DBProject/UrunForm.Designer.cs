@@ -1,6 +1,6 @@
 ﻿namespace _11253006_DBProject
 {
-    partial class IsciForm
+    partial class UrunForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,23 +31,23 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonAra = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxSehir = new System.Windows.Forms.TextBox();
-            this.textBoxDepartman = new System.Windows.Forms.TextBox();
+            this.textBoxUrunTedarikci = new System.Windows.Forms.TextBox();
+            this.textBoxUrunKategori = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxİsciAdi = new System.Windows.Forms.TextBox();
+            this.textBoxUrunAdi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.btnIsciGuncelle = new System.Windows.Forms.Button();
-            this.btnIsciSil = new System.Windows.Forms.Button();
-            this.btnIsciEkle = new System.Windows.Forms.Button();
+            this.btnUrunGuncelle = new System.Windows.Forms.Button();
+            this.btnUrunSil = new System.Windows.Forms.Button();
+            this.btnUrunEkle = new System.Windows.Forms.Button();
             this.btnYenile = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnDepartmanSil = new System.Windows.Forms.Button();
-            this.btnDepartmanGuncelle = new System.Windows.Forms.Button();
-            this.btnDepartmanEkle = new System.Windows.Forms.Button();
+            this.btnKategoriSil = new System.Windows.Forms.Button();
+            this.btnKategoriGuncelle = new System.Windows.Forms.Button();
+            this.btnKategoriEkle = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -57,10 +57,10 @@
             // 
             this.groupBox1.Controls.Add(this.buttonAra);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBoxSehir);
-            this.groupBox1.Controls.Add(this.textBoxDepartman);
+            this.groupBox1.Controls.Add(this.textBoxUrunTedarikci);
+            this.groupBox1.Controls.Add(this.textBoxUrunKategori);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBoxİsciAdi);
+            this.groupBox1.Controls.Add(this.textBoxUrunAdi);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.shapeContainer1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -68,9 +68,9 @@
             this.groupBox1.Location = new System.Drawing.Point(494, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(471, 105);
-            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "İşçi Arama";
+            this.groupBox1.Text = "Ürün Arama";
             // 
             // buttonAra
             // 
@@ -85,50 +85,50 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(261, 29);
+            this.label3.Location = new System.Drawing.Point(234, 29);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Şehir:";
+            this.label3.Text = "Tedarikçi:";
             // 
-            // textBoxSehir
+            // textBoxUrunTedarikci
             // 
-            this.textBoxSehir.Location = new System.Drawing.Point(326, 24);
-            this.textBoxSehir.Name = "textBoxSehir";
-            this.textBoxSehir.Size = new System.Drawing.Size(120, 27);
-            this.textBoxSehir.TabIndex = 5;
+            this.textBoxUrunTedarikci.Location = new System.Drawing.Point(326, 24);
+            this.textBoxUrunTedarikci.Name = "textBoxUrunTedarikci";
+            this.textBoxUrunTedarikci.Size = new System.Drawing.Size(120, 27);
+            this.textBoxUrunTedarikci.TabIndex = 5;
             // 
-            // textBoxDepartman
+            // textBoxUrunKategori
             // 
-            this.textBoxDepartman.Location = new System.Drawing.Point(128, 67);
-            this.textBoxDepartman.Name = "textBoxDepartman";
-            this.textBoxDepartman.Size = new System.Drawing.Size(104, 27);
-            this.textBoxDepartman.TabIndex = 3;
+            this.textBoxUrunKategori.Location = new System.Drawing.Point(113, 67);
+            this.textBoxUrunKategori.Name = "textBoxUrunKategori";
+            this.textBoxUrunKategori.Size = new System.Drawing.Size(104, 27);
+            this.textBoxUrunKategori.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Departman:";
+            this.label2.Text = "Kategori:";
             // 
-            // textBoxİsciAdi
+            // textBoxUrunAdi
             // 
-            this.textBoxİsciAdi.Location = new System.Drawing.Point(128, 27);
-            this.textBoxİsciAdi.Name = "textBoxİsciAdi";
-            this.textBoxİsciAdi.Size = new System.Drawing.Size(104, 27);
-            this.textBoxİsciAdi.TabIndex = 1;
+            this.textBoxUrunAdi.Location = new System.Drawing.Point(113, 27);
+            this.textBoxUrunAdi.Name = "textBoxUrunAdi";
+            this.textBoxUrunAdi.Size = new System.Drawing.Size(104, 27);
+            this.textBoxUrunAdi.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(88, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "İşçi Adı:";
+            this.label1.Text = "Ürün Adı:";
             // 
             // shapeContainer1
             // 
@@ -145,46 +145,46 @@
             // 
             this.lineShape1.BorderWidth = 2;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 247;
-            this.lineShape1.X2 = 247;
+            this.lineShape1.X1 = 226;
+            this.lineShape1.X2 = 226;
             this.lineShape1.Y1 = -10;
             this.lineShape1.Y2 = 80;
             // 
-            // btnIsciGuncelle
+            // btnUrunGuncelle
             // 
-            this.btnIsciGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIsciGuncelle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIsciGuncelle.Location = new System.Drawing.Point(298, 12);
-            this.btnIsciGuncelle.Name = "btnIsciGuncelle";
-            this.btnIsciGuncelle.Size = new System.Drawing.Size(182, 105);
-            this.btnIsciGuncelle.TabIndex = 12;
-            this.btnIsciGuncelle.Text = "İşçi Güncelle";
-            this.btnIsciGuncelle.UseVisualStyleBackColor = true;
-            this.btnIsciGuncelle.Click += new System.EventHandler(this.btnIsciGuncelle_Click);
+            this.btnUrunGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUrunGuncelle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnUrunGuncelle.Location = new System.Drawing.Point(298, 12);
+            this.btnUrunGuncelle.Name = "btnUrunGuncelle";
+            this.btnUrunGuncelle.Size = new System.Drawing.Size(182, 105);
+            this.btnUrunGuncelle.TabIndex = 19;
+            this.btnUrunGuncelle.Text = "Ürün Güncelle";
+            this.btnUrunGuncelle.UseVisualStyleBackColor = true;
+            this.btnUrunGuncelle.Click += new System.EventHandler(this.btnUrunGuncelle_Click);
             // 
-            // btnIsciSil
+            // btnUrunSil
             // 
-            this.btnIsciSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIsciSil.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIsciSil.Location = new System.Drawing.Point(101, 68);
-            this.btnIsciSil.Name = "btnIsciSil";
-            this.btnIsciSil.Size = new System.Drawing.Size(182, 49);
-            this.btnIsciSil.TabIndex = 11;
-            this.btnIsciSil.Text = "İşçi Sil";
-            this.btnIsciSil.UseVisualStyleBackColor = true;
-            this.btnIsciSil.Click += new System.EventHandler(this.btnIsciSil_Click);
+            this.btnUrunSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUrunSil.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnUrunSil.Location = new System.Drawing.Point(101, 68);
+            this.btnUrunSil.Name = "btnUrunSil";
+            this.btnUrunSil.Size = new System.Drawing.Size(182, 49);
+            this.btnUrunSil.TabIndex = 18;
+            this.btnUrunSil.Text = "Ürün Sil";
+            this.btnUrunSil.UseVisualStyleBackColor = true;
+            this.btnUrunSil.Click += new System.EventHandler(this.btnUrunSil_Click);
             // 
-            // btnIsciEkle
+            // btnUrunEkle
             // 
-            this.btnIsciEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIsciEkle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIsciEkle.Location = new System.Drawing.Point(101, 12);
-            this.btnIsciEkle.Name = "btnIsciEkle";
-            this.btnIsciEkle.Size = new System.Drawing.Size(182, 49);
-            this.btnIsciEkle.TabIndex = 10;
-            this.btnIsciEkle.Text = "İşçi  Ekle";
-            this.btnIsciEkle.UseVisualStyleBackColor = true;
-            this.btnIsciEkle.Click += new System.EventHandler(this.btnIsciEkle_Click);
+            this.btnUrunEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUrunEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnUrunEkle.Location = new System.Drawing.Point(101, 12);
+            this.btnUrunEkle.Name = "btnUrunEkle";
+            this.btnUrunEkle.Size = new System.Drawing.Size(182, 49);
+            this.btnUrunEkle.TabIndex = 17;
+            this.btnUrunEkle.Text = "Ürün  Ekle";
+            this.btnUrunEkle.UseVisualStyleBackColor = true;
+            this.btnUrunEkle.Click += new System.EventHandler(this.btnUrunEkle_Click);
             // 
             // btnYenile
             // 
@@ -193,7 +193,7 @@
             this.btnYenile.Location = new System.Drawing.Point(12, 92);
             this.btnYenile.Name = "btnYenile";
             this.btnYenile.Size = new System.Drawing.Size(75, 25);
-            this.btnYenile.TabIndex = 9;
+            this.btnYenile.TabIndex = 16;
             this.btnYenile.Text = "Yenile";
             this.btnYenile.UseVisualStyleBackColor = true;
             this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
@@ -207,7 +207,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1058, 502);
-            this.dataGridView1.TabIndex = 8;
+            this.dataGridView1.TabIndex = 15;
             // 
             // btnBack
             // 
@@ -222,55 +222,55 @@
             this.btnBack.Location = new System.Drawing.Point(12, 12);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 66);
-            this.btnBack.TabIndex = 7;
+            this.btnBack.TabIndex = 14;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnDepartmanSil);
-            this.groupBox2.Controls.Add(this.btnDepartmanGuncelle);
-            this.groupBox2.Controls.Add(this.btnDepartmanEkle);
+            this.groupBox2.Controls.Add(this.btnKategoriSil);
+            this.groupBox2.Controls.Add(this.btnKategoriGuncelle);
+            this.groupBox2.Controls.Add(this.btnKategoriEkle);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox2.Location = new System.Drawing.Point(968, 14);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(102, 104);
-            this.groupBox2.TabIndex = 14;
+            this.groupBox2.Size = new System.Drawing.Size(102, 105);
+            this.groupBox2.TabIndex = 21;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Departman";
+            this.groupBox2.Text = "Kategori";
             // 
-            // btnDepartmanSil
+            // btnKategoriSil
             // 
-            this.btnDepartmanSil.Location = new System.Drawing.Point(7, 70);
-            this.btnDepartmanSil.Name = "btnDepartmanSil";
-            this.btnDepartmanSil.Size = new System.Drawing.Size(83, 23);
-            this.btnDepartmanSil.TabIndex = 2;
-            this.btnDepartmanSil.Text = "Sil";
-            this.btnDepartmanSil.UseVisualStyleBackColor = true;
-            this.btnDepartmanSil.Click += new System.EventHandler(this.btnDepartmanSil_Click);
+            this.btnKategoriSil.Location = new System.Drawing.Point(7, 70);
+            this.btnKategoriSil.Name = "btnKategoriSil";
+            this.btnKategoriSil.Size = new System.Drawing.Size(83, 23);
+            this.btnKategoriSil.TabIndex = 2;
+            this.btnKategoriSil.Text = "Sil";
+            this.btnKategoriSil.UseVisualStyleBackColor = true;
+            this.btnKategoriSil.Click += new System.EventHandler(this.btnKategoriSil_Click);
             // 
-            // btnDepartmanGuncelle
+            // btnKategoriGuncelle
             // 
-            this.btnDepartmanGuncelle.Location = new System.Drawing.Point(7, 44);
-            this.btnDepartmanGuncelle.Name = "btnDepartmanGuncelle";
-            this.btnDepartmanGuncelle.Size = new System.Drawing.Size(83, 23);
-            this.btnDepartmanGuncelle.TabIndex = 1;
-            this.btnDepartmanGuncelle.Text = "Güncelle";
-            this.btnDepartmanGuncelle.UseVisualStyleBackColor = true;
-            this.btnDepartmanGuncelle.Click += new System.EventHandler(this.btnDepartmanGuncelle_Click);
+            this.btnKategoriGuncelle.Location = new System.Drawing.Point(7, 44);
+            this.btnKategoriGuncelle.Name = "btnKategoriGuncelle";
+            this.btnKategoriGuncelle.Size = new System.Drawing.Size(83, 23);
+            this.btnKategoriGuncelle.TabIndex = 1;
+            this.btnKategoriGuncelle.Text = "Güncelle";
+            this.btnKategoriGuncelle.UseVisualStyleBackColor = true;
+            this.btnKategoriGuncelle.Click += new System.EventHandler(this.btnKategoriGuncelle_Click);
             // 
-            // btnDepartmanEkle
+            // btnKategoriEkle
             // 
-            this.btnDepartmanEkle.Location = new System.Drawing.Point(7, 18);
-            this.btnDepartmanEkle.Name = "btnDepartmanEkle";
-            this.btnDepartmanEkle.Size = new System.Drawing.Size(83, 23);
-            this.btnDepartmanEkle.TabIndex = 0;
-            this.btnDepartmanEkle.Text = "Ekle";
-            this.btnDepartmanEkle.UseVisualStyleBackColor = true;
-            this.btnDepartmanEkle.Click += new System.EventHandler(this.btnDepartmanEkle_Click);
+            this.btnKategoriEkle.Location = new System.Drawing.Point(7, 18);
+            this.btnKategoriEkle.Name = "btnKategoriEkle";
+            this.btnKategoriEkle.Size = new System.Drawing.Size(83, 23);
+            this.btnKategoriEkle.TabIndex = 0;
+            this.btnKategoriEkle.Text = "Ekle";
+            this.btnKategoriEkle.UseVisualStyleBackColor = true;
+            this.btnKategoriEkle.Click += new System.EventHandler(this.btnKategoriEkle_Click);
             // 
-            // IsciForm
+            // UrunForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,15 +278,16 @@
             this.ClientSize = new System.Drawing.Size(1082, 653);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnIsciGuncelle);
-            this.Controls.Add(this.btnIsciSil);
-            this.Controls.Add(this.btnIsciEkle);
+            this.Controls.Add(this.btnUrunGuncelle);
+            this.Controls.Add(this.btnUrunSil);
+            this.Controls.Add(this.btnUrunEkle);
             this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "IsciForm";
-            this.Text = "İŞÇİ İŞLEMLERİ";
+            this.Name = "UrunForm";
+            this.Text = "ÜRÜN İŞLEMLERİ";
+            this.Load += new System.EventHandler(this.UrunForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -300,22 +301,22 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonAra;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxSehir;
-        private System.Windows.Forms.TextBox textBoxDepartman;
+        private System.Windows.Forms.TextBox textBoxUrunTedarikci;
+        private System.Windows.Forms.TextBox textBoxUrunKategori;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxİsciAdi;
+        private System.Windows.Forms.TextBox textBoxUrunAdi;
         private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Button btnIsciGuncelle;
-        private System.Windows.Forms.Button btnIsciSil;
-        private System.Windows.Forms.Button btnIsciEkle;
+        private System.Windows.Forms.Button btnUrunGuncelle;
+        private System.Windows.Forms.Button btnUrunSil;
+        private System.Windows.Forms.Button btnUrunEkle;
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnDepartmanSil;
-        private System.Windows.Forms.Button btnDepartmanGuncelle;
-        private System.Windows.Forms.Button btnDepartmanEkle;
+        private System.Windows.Forms.Button btnKategoriSil;
+        private System.Windows.Forms.Button btnKategoriGuncelle;
+        private System.Windows.Forms.Button btnKategoriEkle;
     }
 }

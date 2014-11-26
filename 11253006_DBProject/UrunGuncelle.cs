@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _11253006_DBProject
 {
-    public partial class MusteriEkle : Form
+    public partial class UrunGuncelle : Form
     {
-        public MusteriEkle()
+        public UrunGuncelle()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace _11253006_DBProject
 
         }
 
-        private void MusteriEkle_Load(object sender, EventArgs e)
+        private void UrunGuncelle_Load(object sender, EventArgs e)
         {
 
         }

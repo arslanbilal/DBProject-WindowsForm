@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBOperation.cs" />
+    <Compile Include="IsciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsciEkle.Designer.cs">
+      <DependentUpon>IsciEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="IsciForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IsciForm.Designer.cs">
       <DependentUpon>IsciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsciGuncelle.Designer.cs">
+      <DependentUpon>IsciGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -79,8 +91,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IsciEkle.resx">
+      <DependentUpon>IsciEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IsciForm.resx">
       <DependentUpon>IsciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsciGuncelle.resx">
+      <DependentUpon>IsciGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
