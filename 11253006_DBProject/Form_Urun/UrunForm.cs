@@ -22,21 +22,6 @@ namespace _11253006_DBProject
 
         }
 
-        private void btnKategoriEkle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnKategoriGuncelle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnKategoriSil_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
 
@@ -63,6 +48,16 @@ namespace _11253006_DBProject
         }
 
         private void buttonAra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKategori_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

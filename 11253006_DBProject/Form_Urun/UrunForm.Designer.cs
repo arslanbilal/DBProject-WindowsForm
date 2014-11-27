@@ -42,15 +42,11 @@
             this.btnUrunSil = new System.Windows.Forms.Button();
             this.btnUrunEkle = new System.Windows.Forms.Button();
             this.btnYenile = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewUrun = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnKategoriSil = new System.Windows.Forms.Button();
-            this.btnKategoriGuncelle = new System.Windows.Forms.Button();
-            this.btnKategoriEkle = new System.Windows.Forms.Button();
+            this.btnKategori = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUrun)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -71,6 +67,7 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün Arama";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // buttonAra
             // 
@@ -198,16 +195,16 @@
             this.btnYenile.UseVisualStyleBackColor = true;
             this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
-            // dataGridView1
+            // dataGridViewUrun
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 139);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1058, 502);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridViewUrun.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridViewUrun.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewUrun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewUrun.Location = new System.Drawing.Point(12, 139);
+            this.dataGridViewUrun.Name = "dataGridViewUrun";
+            this.dataGridViewUrun.RowTemplate.Height = 24;
+            this.dataGridViewUrun.Size = new System.Drawing.Size(1058, 502);
+            this.dataGridViewUrun.TabIndex = 15;
             // 
             // btnBack
             // 
@@ -226,49 +223,17 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // groupBox2
+            // btnKategori
             // 
-            this.groupBox2.Controls.Add(this.btnKategoriSil);
-            this.groupBox2.Controls.Add(this.btnKategoriGuncelle);
-            this.groupBox2.Controls.Add(this.btnKategoriEkle);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.ForeColor = System.Drawing.Color.Firebrick;
-            this.groupBox2.Location = new System.Drawing.Point(968, 14);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(102, 105);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kategori";
-            // 
-            // btnKategoriSil
-            // 
-            this.btnKategoriSil.Location = new System.Drawing.Point(7, 70);
-            this.btnKategoriSil.Name = "btnKategoriSil";
-            this.btnKategoriSil.Size = new System.Drawing.Size(83, 23);
-            this.btnKategoriSil.TabIndex = 2;
-            this.btnKategoriSil.Text = "Sil";
-            this.btnKategoriSil.UseVisualStyleBackColor = true;
-            this.btnKategoriSil.Click += new System.EventHandler(this.btnKategoriSil_Click);
-            // 
-            // btnKategoriGuncelle
-            // 
-            this.btnKategoriGuncelle.Location = new System.Drawing.Point(7, 44);
-            this.btnKategoriGuncelle.Name = "btnKategoriGuncelle";
-            this.btnKategoriGuncelle.Size = new System.Drawing.Size(83, 23);
-            this.btnKategoriGuncelle.TabIndex = 1;
-            this.btnKategoriGuncelle.Text = "Güncelle";
-            this.btnKategoriGuncelle.UseVisualStyleBackColor = true;
-            this.btnKategoriGuncelle.Click += new System.EventHandler(this.btnKategoriGuncelle_Click);
-            // 
-            // btnKategoriEkle
-            // 
-            this.btnKategoriEkle.Location = new System.Drawing.Point(7, 18);
-            this.btnKategoriEkle.Name = "btnKategoriEkle";
-            this.btnKategoriEkle.Size = new System.Drawing.Size(83, 23);
-            this.btnKategoriEkle.TabIndex = 0;
-            this.btnKategoriEkle.Text = "Ekle";
-            this.btnKategoriEkle.UseVisualStyleBackColor = true;
-            this.btnKategoriEkle.Click += new System.EventHandler(this.btnKategoriEkle_Click);
+            this.btnKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKategori.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnKategori.Location = new System.Drawing.Point(971, 25);
+            this.btnKategori.Name = "btnKategori";
+            this.btnKategori.Size = new System.Drawing.Size(99, 92);
+            this.btnKategori.TabIndex = 21;
+            this.btnKategori.Text = "Kategori İşlemleri";
+            this.btnKategori.UseVisualStyleBackColor = true;
+            this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
             // 
             // UrunForm
             // 
@@ -276,13 +241,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1082, 653);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.btnKategori);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUrunGuncelle);
             this.Controls.Add(this.btnUrunSil);
             this.Controls.Add(this.btnUrunEkle);
             this.Controls.Add(this.btnYenile);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewUrun);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UrunForm";
@@ -290,8 +255,7 @@
             this.Load += new System.EventHandler(this.UrunForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUrun)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -312,11 +276,8 @@
         private System.Windows.Forms.Button btnUrunSil;
         private System.Windows.Forms.Button btnUrunEkle;
         private System.Windows.Forms.Button btnYenile;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewUrun;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnKategoriSil;
-        private System.Windows.Forms.Button btnKategoriGuncelle;
-        private System.Windows.Forms.Button btnKategoriEkle;
+        private System.Windows.Forms.Button btnKategori;
     }
 }

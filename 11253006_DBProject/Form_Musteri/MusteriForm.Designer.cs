@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewMusteri = new System.Windows.Forms.DataGridView();
             this.btnYenile = new System.Windows.Forms.Button();
             this.btnMusteriEkle = new System.Windows.Forms.Button();
             this.btnMusteriSil = new System.Windows.Forms.Button();
@@ -44,20 +44,20 @@
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnBack = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMusteri)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridViewMusteri
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 139);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1058, 502);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewMusteri.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridViewMusteri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewMusteri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMusteri.Location = new System.Drawing.Point(12, 139);
+            this.dataGridViewMusteri.Name = "dataGridViewMusteri";
+            this.dataGridViewMusteri.RowTemplate.Height = 24;
+            this.dataGridViewMusteri.Size = new System.Drawing.Size(1058, 502);
+            this.dataGridViewMusteri.TabIndex = 1;
             // 
             // btnYenile
             // 
@@ -232,12 +232,12 @@
             this.Controls.Add(this.btnMusteriSil);
             this.Controls.Add(this.btnMusteriEkle);
             this.Controls.Add(this.btnYenile);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewMusteri);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MusteriForm";
             this.Text = "MÜŞTERİ İŞLEMLERİ";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMusteri)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -247,7 +247,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewMusteri;
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.Button btnMusteriEkle;
         private System.Windows.Forms.Button btnMusteriSil;

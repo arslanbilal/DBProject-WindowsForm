@@ -46,24 +46,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBOperation.cs" />
-    <Compile Include="CalisanEkle.cs">
+    <Compile Include="Class_Db\DBOperation.cs" />
+    <Compile Include="Form_Calisan\CalisanEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalisanEkle.Designer.cs">
+    <Compile Include="Form_Calisan\CalisanEkle.Designer.cs">
       <DependentUpon>CalisanEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalisanForm.cs">
+    <Compile Include="Form_Calisan\CalisanForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalisanForm.Designer.cs">
+    <Compile Include="Form_Calisan\CalisanForm.Designer.cs">
       <DependentUpon>CalisanForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalisanGuncelle.cs">
+    <Compile Include="Form_Calisan\CalisanGuncelle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalisanGuncelle.Designer.cs">
+    <Compile Include="Form_Calisan\CalisanGuncelle.Designer.cs">
       <DependentUpon>CalisanGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Departman\DepartmanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Departman\DepartmanEkle.Designer.cs">
+      <DependentUpon>DepartmanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Departman\DepartmanGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Departman\DepartmanGuncelle.Designer.cs">
+      <DependentUpon>DepartmanGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Departman\DepartmanFom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Departman\DepartmanFom.Designer.cs">
+      <DependentUpon>DepartmanFom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kategori\KategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kategori\KategoriEkle.Designer.cs">
+      <DependentUpon>KategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kategori\KategoriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kategori\KategoriForm.Designer.cs">
+      <DependentUpon>KategoriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kategori\KategoriGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kategori\KategoriGuncelle.Designer.cs">
+      <DependentUpon>KategoriGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -71,99 +107,117 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MusteriEkle.cs">
+    <Compile Include="Form_Musteri\MusteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MusteriEkle.Designer.cs">
+    <Compile Include="Form_Musteri\MusteriEkle.Designer.cs">
       <DependentUpon>MusteriEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="MusteriForm.cs">
+    <Compile Include="Form_Musteri\MusteriForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MusteriForm.Designer.cs">
+    <Compile Include="Form_Musteri\MusteriForm.Designer.cs">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MusteriGuncelle.cs">
+    <Compile Include="Form_Musteri\MusteriGuncelle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MusteriGuncelle.Designer.cs">
+    <Compile Include="Form_Musteri\MusteriGuncelle.Designer.cs">
       <DependentUpon>MusteriGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SatisEkle.cs">
+    <Compile Include="Form_Satis\SatisEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SatisEkle.Designer.cs">
+    <Compile Include="Form_Satis\SatisEkle.Designer.cs">
       <DependentUpon>SatisEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="SatisForm.cs">
+    <Compile Include="Form_Satis\SatisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SatisForm.Designer.cs">
+    <Compile Include="Form_Satis\SatisForm.Designer.cs">
       <DependentUpon>SatisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SatisGuncelle.cs">
+    <Compile Include="Form_Satis\SatisGuncelle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SatisGuncelle.Designer.cs">
+    <Compile Include="Form_Satis\SatisGuncelle.Designer.cs">
       <DependentUpon>SatisGuncelle.cs</DependentUpon>
     </Compile>
-    <Compile Include="TedarikciEkle.cs">
+    <Compile Include="Form_Tedarikci\TedarikciEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TedarikciEkle.Designer.cs">
+    <Compile Include="Form_Tedarikci\TedarikciEkle.Designer.cs">
       <DependentUpon>TedarikciEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="TedarikciForm.cs">
+    <Compile Include="Form_Tedarikci\TedarikciForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TedarikciForm.Designer.cs">
+    <Compile Include="Form_Tedarikci\TedarikciForm.Designer.cs">
       <DependentUpon>TedarikciForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TedarikciGuncelle.cs">
+    <Compile Include="Form_Tedarikci\TedarikciGuncelle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TedarikciGuncelle.Designer.cs">
+    <Compile Include="Form_Tedarikci\TedarikciGuncelle.Designer.cs">
       <DependentUpon>TedarikciGuncelle.cs</DependentUpon>
     </Compile>
-    <Compile Include="UrunEkle.cs">
+    <Compile Include="Form_Urun\UrunEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UrunEkle.Designer.cs">
+    <Compile Include="Form_Urun\UrunEkle.Designer.cs">
       <DependentUpon>UrunEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="UrunForm.cs">
+    <Compile Include="Form_Urun\UrunForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UrunForm.Designer.cs">
+    <Compile Include="Form_Urun\UrunForm.Designer.cs">
       <DependentUpon>UrunForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UrunGuncelle.cs">
+    <Compile Include="Form_Urun\UrunGuncelle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UrunGuncelle.Designer.cs">
+    <Compile Include="Form_Urun\UrunGuncelle.Designer.cs">
       <DependentUpon>UrunGuncelle.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CalisanEkle.resx">
+    <EmbeddedResource Include="Form_Calisan\CalisanEkle.resx">
       <DependentUpon>CalisanEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalisanForm.resx">
+    <EmbeddedResource Include="Form_Calisan\CalisanForm.resx">
       <DependentUpon>CalisanForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalisanGuncelle.resx">
+    <EmbeddedResource Include="Form_Calisan\CalisanGuncelle.resx">
       <DependentUpon>CalisanGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Departman\DepartmanEkle.resx">
+      <DependentUpon>DepartmanEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Departman\DepartmanFom.resx">
+      <DependentUpon>DepartmanFom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Departman\DepartmanGuncelle.resx">
+      <DependentUpon>DepartmanGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kategori\KategoriEkle.resx">
+      <DependentUpon>KategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kategori\KategoriForm.resx">
+      <DependentUpon>KategoriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kategori\KategoriGuncelle.resx">
+      <DependentUpon>KategoriGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MusteriEkle.resx">
+    <EmbeddedResource Include="Form_Musteri\MusteriEkle.resx">
       <DependentUpon>MusteriEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MusteriForm.resx">
+    <EmbeddedResource Include="Form_Musteri\MusteriForm.resx">
       <DependentUpon>MusteriForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MusteriGuncelle.resx">
+    <EmbeddedResource Include="Form_Musteri\MusteriGuncelle.resx">
       <DependentUpon>MusteriGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -176,31 +230,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SatisEkle.resx">
+    <EmbeddedResource Include="Form_Satis\SatisEkle.resx">
       <DependentUpon>SatisEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SatisForm.resx">
+    <EmbeddedResource Include="Form_Satis\SatisForm.resx">
       <DependentUpon>SatisForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SatisGuncelle.resx">
+    <EmbeddedResource Include="Form_Satis\SatisGuncelle.resx">
       <DependentUpon>SatisGuncelle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TedarikciEkle.resx">
+    <EmbeddedResource Include="Form_Tedarikci\TedarikciEkle.resx">
       <DependentUpon>TedarikciEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TedarikciForm.resx">
+    <EmbeddedResource Include="Form_Tedarikci\TedarikciForm.resx">
       <DependentUpon>TedarikciForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TedarikciGuncelle.resx">
+    <EmbeddedResource Include="Form_Tedarikci\TedarikciGuncelle.resx">
       <DependentUpon>TedarikciGuncelle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UrunEkle.resx">
+    <EmbeddedResource Include="Form_Urun\UrunEkle.resx">
       <DependentUpon>UrunEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UrunForm.resx">
+    <EmbeddedResource Include="Form_Urun\UrunForm.resx">
       <DependentUpon>UrunForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UrunGuncelle.resx">
+    <EmbeddedResource Include="Form_Urun\UrunGuncelle.resx">
       <DependentUpon>UrunGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

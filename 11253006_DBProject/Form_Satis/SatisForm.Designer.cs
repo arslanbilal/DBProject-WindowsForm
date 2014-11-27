@@ -46,10 +46,10 @@
             this.btnSatisGuncelle = new System.Windows.Forms.Button();
             this.btnSatisEkle = new System.Windows.Forms.Button();
             this.btnYenile = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSatis = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSatis)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -236,16 +236,16 @@
             this.btnYenile.UseVisualStyleBackColor = true;
             this.btnYenile.Click += new System.EventHandler(this.btnYenile_Click);
             // 
-            // dataGridView1
+            // dataGridViewSatis
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 139);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1058, 502);
-            this.dataGridView1.TabIndex = 8;
+            this.dataGridViewSatis.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridViewSatis.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewSatis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSatis.Location = new System.Drawing.Point(12, 139);
+            this.dataGridViewSatis.Name = "dataGridViewSatis";
+            this.dataGridViewSatis.RowTemplate.Height = 24;
+            this.dataGridViewSatis.Size = new System.Drawing.Size(1058, 502);
+            this.dataGridViewSatis.TabIndex = 8;
             // 
             // btnBack
             // 
@@ -275,7 +275,7 @@
             this.Controls.Add(this.btnSatisGuncelle);
             this.Controls.Add(this.btnSatisEkle);
             this.Controls.Add(this.btnYenile);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewSatis);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SatisForm";
@@ -284,7 +284,7 @@
             this.Load += new System.EventHandler(this.SatisForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSatis)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,7 +303,7 @@
         private System.Windows.Forms.Button btnSatisGuncelle;
         private System.Windows.Forms.Button btnSatisEkle;
         private System.Windows.Forms.Button btnYenile;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewSatis;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.TextBox textBoxAdet;
         private System.Windows.Forms.Label label4;
