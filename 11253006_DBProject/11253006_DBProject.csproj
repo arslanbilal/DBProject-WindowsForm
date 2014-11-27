@@ -47,23 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBOperation.cs" />
-    <Compile Include="IsciEkle.cs">
+    <Compile Include="CalisanEkle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IsciEkle.Designer.cs">
-      <DependentUpon>IsciEkle.cs</DependentUpon>
+    <Compile Include="CalisanEkle.Designer.cs">
+      <DependentUpon>CalisanEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="IsciForm.cs">
+    <Compile Include="CalisanForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IsciForm.Designer.cs">
-      <DependentUpon>IsciForm.cs</DependentUpon>
+    <Compile Include="CalisanForm.Designer.cs">
+      <DependentUpon>CalisanForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="IsciGuncelle.cs">
+    <Compile Include="CalisanGuncelle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IsciGuncelle.Designer.cs">
-      <DependentUpon>IsciGuncelle.cs</DependentUpon>
+    <Compile Include="CalisanGuncelle.Designer.cs">
+      <DependentUpon>CalisanGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -91,14 +91,68 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IsciEkle.resx">
-      <DependentUpon>IsciEkle.cs</DependentUpon>
+    <Compile Include="SatisEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisEkle.Designer.cs">
+      <DependentUpon>SatisEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisForm.Designer.cs">
+      <DependentUpon>SatisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatisGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisGuncelle.Designer.cs">
+      <DependentUpon>SatisGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciEkle.Designer.cs">
+      <DependentUpon>TedarikciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciForm.Designer.cs">
+      <DependentUpon>TedarikciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciGuncelle.Designer.cs">
+      <DependentUpon>TedarikciGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunEkle.Designer.cs">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunForm.Designer.cs">
+      <DependentUpon>UrunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunGuncelle.Designer.cs">
+      <DependentUpon>UrunGuncelle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalisanEkle.resx">
+      <DependentUpon>CalisanEkle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IsciForm.resx">
-      <DependentUpon>IsciForm.cs</DependentUpon>
+    <EmbeddedResource Include="CalisanForm.resx">
+      <DependentUpon>CalisanForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IsciGuncelle.resx">
-      <DependentUpon>IsciGuncelle.cs</DependentUpon>
+    <EmbeddedResource Include="CalisanGuncelle.resx">
+      <DependentUpon>CalisanGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -122,6 +176,33 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SatisEkle.resx">
+      <DependentUpon>SatisEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisForm.resx">
+      <DependentUpon>SatisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisGuncelle.resx">
+      <DependentUpon>SatisGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciEkle.resx">
+      <DependentUpon>TedarikciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciForm.resx">
+      <DependentUpon>TedarikciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciGuncelle.resx">
+      <DependentUpon>TedarikciGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEkle.resx">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunForm.resx">
+      <DependentUpon>UrunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunGuncelle.resx">
+      <DependentUpon>UrunGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,6 +221,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

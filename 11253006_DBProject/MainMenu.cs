@@ -22,6 +22,7 @@ namespace _11253006_DBProject
         private void btnMusteri_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Müşteri Ekranı");
+            //? Application.Run(new MusteriForm());
         }
 
         // İşçi Ekranına Geçişi Sağlar.
@@ -58,6 +59,13 @@ namespace _11253006_DBProject
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Admin Ekranı");
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            //! DBOperation db = new DBOperation();
+
+            //! DataTable dt = db.SelectTable("select * from tblCustomers");
         }
 
     }

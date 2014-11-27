@@ -1,6 +1,6 @@
 ﻿namespace _11253006_DBProject
 {
-    partial class IsciForm
+    partial class CalisanForm
     {
         /// <summary>
         /// Required designer variable.
@@ -38,9 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.btnIsciGuncelle = new System.Windows.Forms.Button();
-            this.btnIsciSil = new System.Windows.Forms.Button();
-            this.btnIsciEkle = new System.Windows.Forms.Button();
+            this.btnCalisanGuncelle = new System.Windows.Forms.Button();
+            this.btnCalisanSil = new System.Windows.Forms.Button();
+            this.btnCalisanEkle = new System.Windows.Forms.Button();
             this.btnYenile = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
@@ -70,7 +70,7 @@
             this.groupBox1.Size = new System.Drawing.Size(471, 105);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "İşçi Arama";
+            this.groupBox1.Text = "Çalışan Arama";
             // 
             // buttonAra
             // 
@@ -126,9 +126,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(111, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "İşçi Adı:";
+            this.label1.Text = "Çalışan Adı:";
             // 
             // shapeContainer1
             // 
@@ -150,41 +150,41 @@
             this.lineShape1.Y1 = -10;
             this.lineShape1.Y2 = 80;
             // 
-            // btnIsciGuncelle
+            // btnCalisanGuncelle
             // 
-            this.btnIsciGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIsciGuncelle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIsciGuncelle.Location = new System.Drawing.Point(298, 12);
-            this.btnIsciGuncelle.Name = "btnIsciGuncelle";
-            this.btnIsciGuncelle.Size = new System.Drawing.Size(182, 105);
-            this.btnIsciGuncelle.TabIndex = 12;
-            this.btnIsciGuncelle.Text = "İşçi Güncelle";
-            this.btnIsciGuncelle.UseVisualStyleBackColor = true;
-            this.btnIsciGuncelle.Click += new System.EventHandler(this.btnIsciGuncelle_Click);
+            this.btnCalisanGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCalisanGuncelle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnCalisanGuncelle.Location = new System.Drawing.Point(298, 12);
+            this.btnCalisanGuncelle.Name = "btnCalisanGuncelle";
+            this.btnCalisanGuncelle.Size = new System.Drawing.Size(182, 105);
+            this.btnCalisanGuncelle.TabIndex = 12;
+            this.btnCalisanGuncelle.Text = "Çalışan Güncelle";
+            this.btnCalisanGuncelle.UseVisualStyleBackColor = true;
+            this.btnCalisanGuncelle.Click += new System.EventHandler(this.btnCalisanGuncelle_Click);
             // 
-            // btnIsciSil
+            // btnCalisanSil
             // 
-            this.btnIsciSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIsciSil.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIsciSil.Location = new System.Drawing.Point(101, 68);
-            this.btnIsciSil.Name = "btnIsciSil";
-            this.btnIsciSil.Size = new System.Drawing.Size(182, 49);
-            this.btnIsciSil.TabIndex = 11;
-            this.btnIsciSil.Text = "İşçi Sil";
-            this.btnIsciSil.UseVisualStyleBackColor = true;
-            this.btnIsciSil.Click += new System.EventHandler(this.btnIsciSil_Click);
+            this.btnCalisanSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCalisanSil.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnCalisanSil.Location = new System.Drawing.Point(101, 68);
+            this.btnCalisanSil.Name = "btnCalisanSil";
+            this.btnCalisanSil.Size = new System.Drawing.Size(182, 49);
+            this.btnCalisanSil.TabIndex = 11;
+            this.btnCalisanSil.Text = "Çalışan Sil";
+            this.btnCalisanSil.UseVisualStyleBackColor = true;
+            this.btnCalisanSil.Click += new System.EventHandler(this.btnCalisanSil_Click);
             // 
-            // btnIsciEkle
+            // btnCalisanEkle
             // 
-            this.btnIsciEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnIsciEkle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnIsciEkle.Location = new System.Drawing.Point(101, 12);
-            this.btnIsciEkle.Name = "btnIsciEkle";
-            this.btnIsciEkle.Size = new System.Drawing.Size(182, 49);
-            this.btnIsciEkle.TabIndex = 10;
-            this.btnIsciEkle.Text = "İşçi  Ekle";
-            this.btnIsciEkle.UseVisualStyleBackColor = true;
-            this.btnIsciEkle.Click += new System.EventHandler(this.btnIsciEkle_Click);
+            this.btnCalisanEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCalisanEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnCalisanEkle.Location = new System.Drawing.Point(101, 12);
+            this.btnCalisanEkle.Name = "btnCalisanEkle";
+            this.btnCalisanEkle.Size = new System.Drawing.Size(182, 49);
+            this.btnCalisanEkle.TabIndex = 10;
+            this.btnCalisanEkle.Text = "Çalışan  Ekle";
+            this.btnCalisanEkle.UseVisualStyleBackColor = true;
+            this.btnCalisanEkle.Click += new System.EventHandler(this.btnCalisanEkle_Click);
             // 
             // btnYenile
             // 
@@ -270,7 +270,7 @@
             this.btnDepartmanEkle.UseVisualStyleBackColor = true;
             this.btnDepartmanEkle.Click += new System.EventHandler(this.btnDepartmanEkle_Click);
             // 
-            // IsciForm
+            // CalisanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -278,15 +278,15 @@
             this.ClientSize = new System.Drawing.Size(1082, 653);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnIsciGuncelle);
-            this.Controls.Add(this.btnIsciSil);
-            this.Controls.Add(this.btnIsciEkle);
+            this.Controls.Add(this.btnCalisanGuncelle);
+            this.Controls.Add(this.btnCalisanSil);
+            this.Controls.Add(this.btnCalisanEkle);
             this.Controls.Add(this.btnYenile);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "IsciForm";
-            this.Text = "İŞÇİ İŞLEMLERİ";
+            this.Name = "CalisanForm";
+            this.Text = "ÇALIŞAN İŞLEMLERİ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -307,9 +307,9 @@
         private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Button btnIsciGuncelle;
-        private System.Windows.Forms.Button btnIsciSil;
-        private System.Windows.Forms.Button btnIsciEkle;
+        private System.Windows.Forms.Button btnCalisanGuncelle;
+        private System.Windows.Forms.Button btnCalisanSil;
+        private System.Windows.Forms.Button btnCalisanEkle;
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnBack;

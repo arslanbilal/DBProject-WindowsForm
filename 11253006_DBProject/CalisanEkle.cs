@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _11253006_DBProject
 {
-    public partial class IsciGuncelle : Form
+    public partial class CalisanEkle : Form
     {
-        public IsciGuncelle()
+        public CalisanEkle()
         {
             InitializeComponent();
         }
@@ -22,7 +22,12 @@ namespace _11253006_DBProject
 
         }
 
-        private void btnGuncelle_Click(object sender, EventArgs e)
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IsciEkle_Load(object sender, EventArgs e)
         {
 
         }

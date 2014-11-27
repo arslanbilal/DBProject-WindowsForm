@@ -1,6 +1,6 @@
 ﻿namespace _11253006_DBProject
 {
-    partial class IsciEkle
+    partial class CalisanEkle
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@
         {
             this.txtBoxSehir = new System.Windows.Forms.TextBox();
             this.textBoxMaas = new System.Windows.Forms.TextBox();
-            this.textBoxDogumTarihi = new System.Windows.Forms.TextBox();
             this.textBoxIsciAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
@@ -40,8 +39,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxGirisTarihi = new System.Windows.Forms.TextBox();
             this.comboBoxDepartman = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerDogumTarihi = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerGirisTarihi = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // txtBoxSehir
@@ -57,13 +57,6 @@
             this.textBoxMaas.Name = "textBoxMaas";
             this.textBoxMaas.Size = new System.Drawing.Size(194, 22);
             this.textBoxMaas.TabIndex = 28;
-            // 
-            // textBoxDogumTarihi
-            // 
-            this.textBoxDogumTarihi.Location = new System.Drawing.Point(256, 365);
-            this.textBoxDogumTarihi.Name = "textBoxDogumTarihi";
-            this.textBoxDogumTarihi.Size = new System.Drawing.Size(194, 22);
-            this.textBoxDogumTarihi.TabIndex = 26;
             // 
             // textBoxIsciAdi
             // 
@@ -152,9 +145,9 @@
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(29, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 25);
+            this.label1.Size = new System.Drawing.Size(176, 25);
             this.label1.TabIndex = 16;
-            this.label1.Text = "İŞÇİ ADI:";
+            this.label1.Text = "ÇALIŞANIN ADI:";
             // 
             // label3
             // 
@@ -168,33 +161,44 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "GİRİŞ TARİHİ:";
             // 
-            // textBoxGirisTarihi
-            // 
-            this.textBoxGirisTarihi.Location = new System.Drawing.Point(256, 445);
-            this.textBoxGirisTarihi.Name = "textBoxGirisTarihi";
-            this.textBoxGirisTarihi.Size = new System.Drawing.Size(194, 22);
-            this.textBoxGirisTarihi.TabIndex = 27;
-            // 
             // comboBoxDepartman
             // 
             this.comboBoxDepartman.FormattingEnabled = true;
-            this.comboBoxDepartman.Location = new System.Drawing.Point(256, 271);
+            this.comboBoxDepartman.Location = new System.Drawing.Point(257, 272);
             this.comboBoxDepartman.Name = "comboBoxDepartman";
             this.comboBoxDepartman.Size = new System.Drawing.Size(193, 24);
             this.comboBoxDepartman.TabIndex = 30;
             // 
-            // IsciEkle
+            // dateTimePickerDogumTarihi
+            // 
+            this.dateTimePickerDogumTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePickerDogumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerDogumTarihi.Location = new System.Drawing.Point(258, 363);
+            this.dateTimePickerDogumTarihi.Name = "dateTimePickerDogumTarihi";
+            this.dateTimePickerDogumTarihi.Size = new System.Drawing.Size(192, 24);
+            this.dateTimePickerDogumTarihi.TabIndex = 31;
+            // 
+            // dateTimePickerGirisTarihi
+            // 
+            this.dateTimePickerGirisTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePickerGirisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerGirisTarihi.Location = new System.Drawing.Point(258, 443);
+            this.dateTimePickerGirisTarihi.Name = "dateTimePickerGirisTarihi";
+            this.dateTimePickerGirisTarihi.Size = new System.Drawing.Size(192, 24);
+            this.dateTimePickerGirisTarihi.TabIndex = 32;
+            // 
+            // CalisanEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
+            this.Controls.Add(this.dateTimePickerGirisTarihi);
+            this.Controls.Add(this.dateTimePickerDogumTarihi);
             this.Controls.Add(this.comboBoxDepartman);
             this.Controls.Add(this.txtBoxSehir);
             this.Controls.Add(this.textBoxMaas);
-            this.Controls.Add(this.textBoxGirisTarihi);
-            this.Controls.Add(this.textBoxDogumTarihi);
             this.Controls.Add(this.textBoxIsciAdi);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.btnEkle);
@@ -205,8 +209,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "IsciEkle";
-            this.Text = "İŞÇİ EKLE";
+            this.Name = "CalisanEkle";
+            this.Text = "ÇALIŞAN EKLE";
             this.Load += new System.EventHandler(this.IsciEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -217,7 +221,6 @@
 
         private System.Windows.Forms.TextBox txtBoxSehir;
         private System.Windows.Forms.TextBox textBoxMaas;
-        private System.Windows.Forms.TextBox textBoxDogumTarihi;
         private System.Windows.Forms.TextBox textBoxIsciAdi;
         private System.Windows.Forms.Button btnIptal;
         private System.Windows.Forms.Button btnEkle;
@@ -227,7 +230,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxGirisTarihi;
         private System.Windows.Forms.ComboBox comboBoxDepartman;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDogumTarihi;
+        private System.Windows.Forms.DateTimePicker dateTimePickerGirisTarihi;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _11253006_DBProject
 {
-    public partial class IsciForm : Form
+    public partial class SatisForm : Form
     {
-        public IsciForm()
+        public SatisForm()
         {
             InitializeComponent();
         }
@@ -27,17 +27,17 @@ namespace _11253006_DBProject
 
         }
 
-        private void btnIsciEkle_Click(object sender, EventArgs e)
+        private void SatisForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnIsciSil_Click(object sender, EventArgs e)
+        private void btnSatisEkle_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnIsciGuncelle_Click(object sender, EventArgs e)
+        private void btnSatisGuncelle_Click(object sender, EventArgs e)
         {
 
         }
@@ -46,22 +46,5 @@ namespace _11253006_DBProject
         {
 
         }
-
-        private void btnDepartmanEkle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDepartmanGuncelle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnDepartmanSil_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

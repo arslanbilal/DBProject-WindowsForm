@@ -136,6 +136,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainMenu";
             this.Text = "MENÜ";
+            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
 
         }
