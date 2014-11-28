@@ -41,8 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxFirmaAdi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMusteri)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -50,12 +48,20 @@
             // 
             // dataGridViewMusteri
             // 
-            this.dataGridViewMusteri.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dataGridViewMusteri.AllowUserToAddRows = false;
+            this.dataGridViewMusteri.AllowUserToDeleteRows = false;
+            this.dataGridViewMusteri.AllowUserToOrderColumns = true;
+            this.dataGridViewMusteri.AllowUserToResizeColumns = false;
+            this.dataGridViewMusteri.AllowUserToResizeRows = false;
+            this.dataGridViewMusteri.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewMusteri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewMusteri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMusteri.Location = new System.Drawing.Point(12, 139);
+            this.dataGridViewMusteri.MultiSelect = false;
             this.dataGridViewMusteri.Name = "dataGridViewMusteri";
+            this.dataGridViewMusteri.ReadOnly = true;
             this.dataGridViewMusteri.RowTemplate.Height = 24;
+            this.dataGridViewMusteri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMusteri.Size = new System.Drawing.Size(1058, 502);
             this.dataGridViewMusteri.TabIndex = 1;
             // 
@@ -116,7 +122,6 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxFirmaAdi);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.shapeContainer1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(499, 12);
@@ -139,7 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(261, 29);
+            this.label3.Location = new System.Drawing.Point(259, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 6;
@@ -184,26 +189,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Firma Adı:";
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(3, 23);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(465, 79);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderWidth = 2;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 247;
-            this.lineShape1.X2 = 247;
-            this.lineShape1.Y1 = -10;
-            this.lineShape1.Y2 = 80;
-            // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
@@ -237,6 +222,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MusteriForm";
             this.Text = "MÜŞTERİ İŞLEMLERİ";
+            this.Load += new System.EventHandler(this.MusteriForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMusteri)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -259,8 +245,6 @@
         private System.Windows.Forms.TextBox textBoxİletisimİsmi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxFirmaAdi;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button buttonAra;
     }
 }

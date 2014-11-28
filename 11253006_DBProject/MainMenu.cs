@@ -21,32 +21,41 @@ namespace _11253006_DBProject
         // Müşteri Ekranına Geçişi Sağlar.
         private void btnMusteri_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Müşteri Ekranı");
-            //? Application.Run(new MusteriForm());
+            MusteriForm musteriForm = new MusteriForm();
+            musteriForm.Tag = this;
+            musteriForm.ShowDialog(this);
         }
 
         // İşçi Ekranına Geçişi Sağlar.
         private void btnIsci_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("İşçi Ekranı");
+            CalisanForm calısanForm = new CalisanForm();
+            calısanForm.Tag = this;
+            calısanForm.ShowDialog(this);
         }
 
         // Ürün Ekranına Geçişi Sağlar.
         private void btnUrun_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ürün Ekranı");
+            UrunForm urunForm = new UrunForm();
+            urunForm.Tag = this;
+            urunForm.ShowDialog(this);
         }
 
         // Tedarikçi Ekranına Geçişi Sağlar.
         private void btnTedarikci_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Tedarikçi Ekranı");
+            TedarikciForm tedarikciForm = new TedarikciForm();
+            tedarikciForm.Tag = this;
+            tedarikciForm.ShowDialog();
         }
 
         // Satış Ekranına Geçişi Sağlar.
         private void btnSatis_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Satış Ekranı");
+            SatisForm satisFrom = new SatisForm();
+            satisFrom.Tag = this;
+            satisFrom.ShowDialog(); 
         }
 
         // Yararlı Tablolar Ekranına Geçişi Sağlar.
@@ -63,9 +72,6 @@ namespace _11253006_DBProject
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            //! DBOperation db = new DBOperation();
-
-            //! DataTable dt = db.SelectTable("select * from tblCustomers");
         }
 
     }

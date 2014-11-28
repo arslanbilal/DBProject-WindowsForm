@@ -39,7 +39,7 @@
             // 
             this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnEkle.Location = new System.Drawing.Point(250, 111);
+            this.btnEkle.Location = new System.Drawing.Point(250, 106);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(120, 30);
             this.btnEkle.TabIndex = 5;
@@ -49,7 +49,7 @@
             // 
             // textBoxAdi
             // 
-            this.textBoxAdi.Location = new System.Drawing.Point(182, 21);
+            this.textBoxAdi.Location = new System.Drawing.Point(182, 16);
             this.textBoxAdi.Name = "textBoxAdi";
             this.textBoxAdi.Size = new System.Drawing.Size(188, 22);
             this.textBoxAdi.TabIndex = 4;
@@ -60,7 +60,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 3;
@@ -68,7 +68,7 @@
             // 
             // textBoxAciklama
             // 
-            this.textBoxAciklama.Location = new System.Drawing.Point(182, 57);
+            this.textBoxAciklama.Location = new System.Drawing.Point(182, 52);
             this.textBoxAciklama.Multiline = true;
             this.textBoxAciklama.Name = "textBoxAciklama";
             this.textBoxAciklama.Size = new System.Drawing.Size(188, 44);
@@ -80,7 +80,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Firebrick;
-            this.label2.Location = new System.Drawing.Point(12, 59);
+            this.label2.Location = new System.Drawing.Point(12, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 6;

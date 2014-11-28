@@ -69,7 +69,7 @@
             this.btnIsci.Name = "btnIsci";
             this.btnIsci.Size = new System.Drawing.Size(250, 200);
             this.btnIsci.TabIndex = 3;
-            this.btnIsci.Text = "ÇALIŞAN İŞÇİ İŞLEMLERİ";
+            this.btnIsci.Text = "ÇALIŞAN İŞLEMLERİ";
             this.btnIsci.UseVisualStyleBackColor = true;
             this.btnIsci.Click += new System.EventHandler(this.btnIsci_Click);
             // 

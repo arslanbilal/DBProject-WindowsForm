@@ -36,8 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxTedarikciAdi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnTedarikciGuncelle = new System.Windows.Forms.Button();
             this.btnTedarikciSil = new System.Windows.Forms.Button();
             this.btnTedarikciEkle = new System.Windows.Forms.Button();
@@ -57,7 +55,6 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxTedarikciAdi);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.shapeContainer1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(494, 12);
@@ -69,7 +66,7 @@
             // 
             // buttonAra
             // 
-            this.buttonAra.Location = new System.Drawing.Point(326, 67);
+            this.buttonAra.Location = new System.Drawing.Point(338, 67);
             this.buttonAra.Name = "buttonAra";
             this.buttonAra.Size = new System.Drawing.Size(120, 30);
             this.buttonAra.TabIndex = 10;
@@ -80,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(261, 29);
+            this.label3.Location = new System.Drawing.Point(268, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 6;
@@ -88,14 +85,14 @@
             // 
             // textBoxTedarikciSehir
             // 
-            this.textBoxTedarikciSehir.Location = new System.Drawing.Point(326, 24);
+            this.textBoxTedarikciSehir.Location = new System.Drawing.Point(338, 24);
             this.textBoxTedarikciSehir.Name = "textBoxTedarikciSehir";
             this.textBoxTedarikciSehir.Size = new System.Drawing.Size(120, 27);
             this.textBoxTedarikciSehir.TabIndex = 5;
             // 
             // textBoxTedarikciİletisimİsmi
             // 
-            this.textBoxTedarikciİletisimİsmi.Location = new System.Drawing.Point(131, 67);
+            this.textBoxTedarikciİletisimİsmi.Location = new System.Drawing.Point(145, 67);
             this.textBoxTedarikciİletisimİsmi.Name = "textBoxTedarikciİletisimİsmi";
             this.textBoxTedarikciİletisimİsmi.Size = new System.Drawing.Size(104, 27);
             this.textBoxTedarikciİletisimİsmi.TabIndex = 3;
@@ -111,7 +108,7 @@
             // 
             // textBoxTedarikciAdi
             // 
-            this.textBoxTedarikciAdi.Location = new System.Drawing.Point(131, 27);
+            this.textBoxTedarikciAdi.Location = new System.Drawing.Point(145, 27);
             this.textBoxTedarikciAdi.Name = "textBoxTedarikciAdi";
             this.textBoxTedarikciAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxTedarikciAdi.TabIndex = 1;
@@ -124,26 +121,6 @@
             this.label1.Size = new System.Drawing.Size(125, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tedarikçi Adı:";
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(3, 23);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(465, 79);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderWidth = 2;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 247;
-            this.lineShape1.X2 = 247;
-            this.lineShape1.Y1 = -10;
-            this.lineShape1.Y2 = 80;
             // 
             // btnTedarikciGuncelle
             // 
@@ -255,8 +232,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxTedarikciAdi;
         private System.Windows.Forms.Label label1;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button btnTedarikciGuncelle;
         private System.Windows.Forms.Button btnTedarikciSil;
         private System.Windows.Forms.Button btnTedarikciEkle;

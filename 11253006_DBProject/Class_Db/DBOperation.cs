@@ -29,6 +29,7 @@ namespace _11253006_DBProject
         public DataTable SelectTable(String cmdStr)
         {
             connection = new SqlConnection(cnnStr);
+            connection.Open();
             sqlCmd = new SqlCommand(cmdStr, connection);
             sqlDa = new SqlDataAdapter(sqlCmd);
 
@@ -42,7 +43,7 @@ namespace _11253006_DBProject
                 
                 throw;
             }
-
+            connection.Close();
             return dt;
         }
 

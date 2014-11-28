@@ -41,7 +41,7 @@
             this.textBoxUlke = new System.Windows.Forms.TextBox();
             this.textBoxTelefon = new System.Windows.Forms.TextBox();
             this.textBoxAdres = new System.Windows.Forms.TextBox();
-            this.txtBoxİletisimİsmi = new System.Windows.Forms.TextBox();
+            this.textBoxIletisimAdi = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -126,6 +126,7 @@
             this.btnEkle.TabIndex = 8;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnIptal
             // 
@@ -145,6 +146,7 @@
             this.textBoxFirmaAdi.Name = "textBoxFirmaAdi";
             this.textBoxFirmaAdi.Size = new System.Drawing.Size(194, 22);
             this.textBoxFirmaAdi.TabIndex = 10;
+            this.textBoxFirmaAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxSehir
             // 
@@ -152,6 +154,7 @@
             this.textBoxSehir.Name = "textBoxSehir";
             this.textBoxSehir.Size = new System.Drawing.Size(194, 22);
             this.textBoxSehir.TabIndex = 11;
+            this.textBoxSehir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxUlke
             // 
@@ -159,6 +162,7 @@
             this.textBoxUlke.Name = "textBoxUlke";
             this.textBoxUlke.Size = new System.Drawing.Size(194, 22);
             this.textBoxUlke.TabIndex = 12;
+            this.textBoxUlke.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxTelefon
             // 
@@ -166,6 +170,7 @@
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(194, 22);
             this.textBoxTelefon.TabIndex = 13;
+            this.textBoxTelefon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // textBoxAdres
             // 
@@ -174,12 +179,13 @@
             this.textBoxAdres.Size = new System.Drawing.Size(194, 22);
             this.textBoxAdres.TabIndex = 14;
             // 
-            // txtBoxİletisimİsmi
+            // textBoxIletisimAdi
             // 
-            this.txtBoxİletisimİsmi.Location = new System.Drawing.Point(239, 118);
-            this.txtBoxİletisimİsmi.Name = "txtBoxİletisimİsmi";
-            this.txtBoxİletisimİsmi.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxİletisimİsmi.TabIndex = 15;
+            this.textBoxIletisimAdi.Location = new System.Drawing.Point(239, 118);
+            this.textBoxIletisimAdi.Name = "textBoxIletisimAdi";
+            this.textBoxIletisimAdi.Size = new System.Drawing.Size(194, 22);
+            this.textBoxIletisimAdi.TabIndex = 15;
+            this.textBoxIletisimAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // MusteriEkle
             // 
@@ -189,7 +195,7 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(478, 649);
-            this.Controls.Add(this.txtBoxİletisimİsmi);
+            this.Controls.Add(this.textBoxIletisimAdi);
             this.Controls.Add(this.textBoxAdres);
             this.Controls.Add(this.textBoxTelefon);
             this.Controls.Add(this.textBoxUlke);
@@ -227,6 +233,6 @@
         private System.Windows.Forms.TextBox textBoxUlke;
         private System.Windows.Forms.TextBox textBoxTelefon;
         private System.Windows.Forms.TextBox textBoxAdres;
-        private System.Windows.Forms.TextBox txtBoxİletisimİsmi;
+        private System.Windows.Forms.TextBox textBoxIletisimAdi;
     }
 }

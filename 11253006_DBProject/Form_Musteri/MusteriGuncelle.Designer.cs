@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxİletisimİsmi = new System.Windows.Forms.TextBox();
+            this.textBoxIletisimİsmi = new System.Windows.Forms.TextBox();
             this.textBoxAdres = new System.Windows.Forms.TextBox();
             this.textBoxTelefon = new System.Windows.Forms.TextBox();
             this.textBoxUlke = new System.Windows.Forms.TextBox();
@@ -44,12 +44,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtBoxİletisimİsmi
+            // textBoxIletisimİsmi
             // 
-            this.txtBoxİletisimİsmi.Location = new System.Drawing.Point(239, 118);
-            this.txtBoxİletisimİsmi.Name = "txtBoxİletisimİsmi";
-            this.txtBoxİletisimİsmi.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxİletisimİsmi.TabIndex = 29;
+            this.textBoxIletisimİsmi.Location = new System.Drawing.Point(239, 118);
+            this.textBoxIletisimİsmi.Name = "textBoxIletisimİsmi";
+            this.textBoxIletisimİsmi.Size = new System.Drawing.Size(194, 22);
+            this.textBoxIletisimİsmi.TabIndex = 29;
+            this.textBoxIletisimİsmi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxAdres
             // 
@@ -64,6 +65,7 @@
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(194, 22);
             this.textBoxTelefon.TabIndex = 27;
+            this.textBoxTelefon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // textBoxUlke
             // 
@@ -71,6 +73,7 @@
             this.textBoxUlke.Name = "textBoxUlke";
             this.textBoxUlke.Size = new System.Drawing.Size(194, 22);
             this.textBoxUlke.TabIndex = 26;
+            this.textBoxUlke.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxSehir
             // 
@@ -78,6 +81,7 @@
             this.textBoxSehir.Name = "textBoxSehir";
             this.textBoxSehir.Size = new System.Drawing.Size(194, 22);
             this.textBoxSehir.TabIndex = 25;
+            this.textBoxSehir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxFirmaAdi
             // 
@@ -85,6 +89,7 @@
             this.textBoxFirmaAdi.Name = "textBoxFirmaAdi";
             this.textBoxFirmaAdi.Size = new System.Drawing.Size(194, 22);
             this.textBoxFirmaAdi.TabIndex = 24;
+            this.textBoxFirmaAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // btnIptal
             // 
@@ -189,7 +194,7 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
-            this.Controls.Add(this.txtBoxİletisimİsmi);
+            this.Controls.Add(this.textBoxIletisimİsmi);
             this.Controls.Add(this.textBoxAdres);
             this.Controls.Add(this.textBoxTelefon);
             this.Controls.Add(this.textBoxUlke);
@@ -206,6 +211,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MusteriGuncelle";
             this.Text = "MusteriGuncelle";
+            this.Load += new System.EventHandler(this.MusteriGuncelle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,7 +219,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxİletisimİsmi;
+        private System.Windows.Forms.TextBox textBoxIletisimİsmi;
         private System.Windows.Forms.TextBox textBoxAdres;
         private System.Windows.Forms.TextBox textBoxTelefon;
         private System.Windows.Forms.TextBox textBoxUlke;
