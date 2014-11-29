@@ -39,12 +39,12 @@ namespace _11253006_DBProject
 
                     if (db.RunCommand(query) > 0)
                     {
-                        MessageBox.Show("Güncelleme İşlemi Gerçekleşti");
+                        MessageBox.Show("Ekleme İşlemi Gerçekleşti");
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Güncelleme İşleminde Hata Oluştu!");
+                        MessageBox.Show("Ekleme İşleminde Hata Oluştu!");
                     }
                 }
             }

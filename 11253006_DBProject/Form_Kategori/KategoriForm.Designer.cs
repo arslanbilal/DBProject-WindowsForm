@@ -31,7 +31,6 @@
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
             this.arama = new System.Windows.Forms.GroupBox();
-            this.btnAra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAdi = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
@@ -67,7 +66,6 @@
             // arama
             // 
             this.arama.BackColor = System.Drawing.Color.Transparent;
-            this.arama.Controls.Add(this.btnAra);
             this.arama.Controls.Add(this.label1);
             this.arama.Controls.Add(this.textBoxAdi);
             this.arama.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -78,16 +76,6 @@
             this.arama.TabIndex = 7;
             this.arama.TabStop = false;
             this.arama.Text = "ARAMA";
-            // 
-            // btnAra
-            // 
-            this.btnAra.Location = new System.Drawing.Point(83, 44);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(90, 32);
-            this.btnAra.TabIndex = 2;
-            this.btnAra.Text = "Ara";
-            this.btnAra.UseVisualStyleBackColor = true;
-            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // label1
             // 
@@ -101,10 +89,11 @@
             // 
             // textBoxAdi
             // 
-            this.textBoxAdi.Location = new System.Drawing.Point(60, 15);
+            this.textBoxAdi.Location = new System.Drawing.Point(72, 15);
             this.textBoxAdi.Name = "textBoxAdi";
-            this.textBoxAdi.Size = new System.Drawing.Size(114, 23);
+            this.textBoxAdi.Size = new System.Drawing.Size(102, 23);
             this.textBoxAdi.TabIndex = 0;
+            this.textBoxAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // btnEkle
             // 
@@ -120,6 +109,7 @@
             // 
             // dataGridViewKategori
             // 
+            this.dataGridViewKategori.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewKategori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKategori.Location = new System.Drawing.Point(12, 114);
             this.dataGridViewKategori.Name = "dataGridViewKategori";
@@ -131,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(482, 453);
             this.Controls.Add(this.btnGuncelle);
@@ -155,7 +145,6 @@
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.GroupBox arama;
-        private System.Windows.Forms.Button btnAra;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxAdi;
         private System.Windows.Forms.Button btnEkle;

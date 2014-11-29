@@ -59,7 +59,10 @@ namespace _11253006_DBProject
 
         private void btnKategori_Click(object sender, EventArgs e)
         {
-
+            KategoriForm kategoriForm = new KategoriForm();
+            kategoriForm.Tag = this;
+            kategoriForm.ShowDialog();
+            //updateTable();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

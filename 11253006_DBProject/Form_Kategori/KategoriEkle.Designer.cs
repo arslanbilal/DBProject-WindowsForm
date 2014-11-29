@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEkle = new System.Windows.Forms.Button();
+            this.btnIptal = new System.Windows.Forms.Button();
             this.textBoxAdi = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAciklama = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnEkle
+            // btnIptal
             // 
-            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnEkle.Location = new System.Drawing.Point(250, 106);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(120, 30);
-            this.btnEkle.TabIndex = 5;
-            this.btnEkle.Text = "EKLE";
-            this.btnEkle.UseVisualStyleBackColor = true;
-            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIptal.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnIptal.Location = new System.Drawing.Point(250, 106);
+            this.btnIptal.Name = "btnIptal";
+            this.btnIptal.Size = new System.Drawing.Size(120, 30);
+            this.btnIptal.TabIndex = 5;
+            this.btnIptal.Text = "İPTAL";
+            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // textBoxAdi
             // 
@@ -53,6 +54,7 @@
             this.textBoxAdi.Name = "textBoxAdi";
             this.textBoxAdi.Size = new System.Drawing.Size(188, 22);
             this.textBoxAdi.TabIndex = 4;
+            this.textBoxAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // label1
             // 
@@ -86,6 +88,18 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Açıklama:";
             // 
+            // btnEkle
+            // 
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnEkle.Location = new System.Drawing.Point(10, 106);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(120, 30);
+            this.btnEkle.TabIndex = 8;
+            this.btnEkle.Text = "EKLE";
+            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            // 
             // KategoriEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -93,9 +107,10 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(382, 153);
+            this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.textBoxAciklama);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnEkle);
+            this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.textBoxAdi);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -109,10 +124,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.Button btnIptal;
         private System.Windows.Forms.TextBox textBoxAdi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxAciklama;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEkle;
     }
 }

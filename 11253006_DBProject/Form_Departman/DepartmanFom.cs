@@ -25,7 +25,7 @@ namespace _11253006_DBProject
         private void DepartmanFom_Load(object sender, EventArgs e)
         {
             dataGridViewDepartman.MultiSelect = false;
-            dataGridViewDepartman.AllowUserToResizeColumns = false;
+            dataGridViewDepartman.AllowUserToResizeColumns = true;
             dataGridViewDepartman.AllowUserToResizeRows = false;
             dataGridViewDepartman.AllowUserToAddRows = false;
             dataGridViewDepartman.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
