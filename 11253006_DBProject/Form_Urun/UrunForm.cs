@@ -12,6 +12,10 @@ namespace _11253006_DBProject
 {
     public partial class UrunForm : Form
     {
+        DBOperation db;
+        DataTable dt;
+        string baseQuery = "SELECT * FROM tblProducts";
+
         public UrunForm()
         {
             InitializeComponent();
@@ -22,9 +26,10 @@ namespace _11253006_DBProject
 
         }
 
+        //! Bu Formu kapatır.
         private void btnBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnYenile_Click(object sender, EventArgs e)

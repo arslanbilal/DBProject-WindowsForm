@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxSehir = new System.Windows.Forms.TextBox();
+            this.textBoxSehir = new System.Windows.Forms.TextBox();
             this.textBoxMaas = new System.Windows.Forms.TextBox();
             this.textBoxIsciAdi = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
@@ -44,12 +44,13 @@
             this.dateTimePickerGirisTarihi = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // txtBoxSehir
+            // textBoxSehir
             // 
-            this.txtBoxSehir.Location = new System.Drawing.Point(256, 115);
-            this.txtBoxSehir.Name = "txtBoxSehir";
-            this.txtBoxSehir.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxSehir.TabIndex = 29;
+            this.textBoxSehir.Location = new System.Drawing.Point(256, 115);
+            this.textBoxSehir.Name = "textBoxSehir";
+            this.textBoxSehir.Size = new System.Drawing.Size(194, 22);
+            this.textBoxSehir.TabIndex = 29;
+            this.textBoxSehir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxMaas
             // 
@@ -57,6 +58,7 @@
             this.textBoxMaas.Name = "textBoxMaas";
             this.textBoxMaas.Size = new System.Drawing.Size(194, 22);
             this.textBoxMaas.TabIndex = 28;
+            this.textBoxMaas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // textBoxIsciAdi
             // 
@@ -64,6 +66,7 @@
             this.textBoxIsciAdi.Name = "textBoxIsciAdi";
             this.textBoxIsciAdi.Size = new System.Drawing.Size(194, 22);
             this.textBoxIsciAdi.TabIndex = 24;
+            this.textBoxIsciAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // btnIptal
             // 
@@ -197,7 +200,7 @@
             this.Controls.Add(this.dateTimePickerGirisTarihi);
             this.Controls.Add(this.dateTimePickerDogumTarihi);
             this.Controls.Add(this.comboBoxDepartman);
-            this.Controls.Add(this.txtBoxSehir);
+            this.Controls.Add(this.textBoxSehir);
             this.Controls.Add(this.textBoxMaas);
             this.Controls.Add(this.textBoxIsciAdi);
             this.Controls.Add(this.btnIptal);
@@ -219,7 +222,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxSehir;
+        private System.Windows.Forms.TextBox textBoxSehir;
         private System.Windows.Forms.TextBox textBoxMaas;
         private System.Windows.Forms.TextBox textBoxIsciAdi;
         private System.Windows.Forms.Button btnIptal;

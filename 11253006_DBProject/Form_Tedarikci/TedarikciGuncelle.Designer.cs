@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxTedarikciİletisimİsmi = new System.Windows.Forms.TextBox();
+            this.textBoxTedarikciIletisimİsmi = new System.Windows.Forms.TextBox();
             this.textBoxTedarikciAdres = new System.Windows.Forms.TextBox();
             this.textBoxTedarikciTelefon = new System.Windows.Forms.TextBox();
             this.textBoxTedarikciUlke = new System.Windows.Forms.TextBox();
@@ -44,12 +44,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtBoxTedarikciİletisimİsmi
+            // textBoxTedarikciIletisimİsmi
             // 
-            this.txtBoxTedarikciİletisimİsmi.Location = new System.Drawing.Point(256, 115);
-            this.txtBoxTedarikciİletisimİsmi.Name = "txtBoxTedarikciİletisimİsmi";
-            this.txtBoxTedarikciİletisimİsmi.Size = new System.Drawing.Size(194, 22);
-            this.txtBoxTedarikciİletisimİsmi.TabIndex = 57;
+            this.textBoxTedarikciIletisimİsmi.Location = new System.Drawing.Point(256, 115);
+            this.textBoxTedarikciIletisimİsmi.Name = "textBoxTedarikciIletisimİsmi";
+            this.textBoxTedarikciIletisimİsmi.Size = new System.Drawing.Size(194, 22);
+            this.textBoxTedarikciIletisimİsmi.TabIndex = 57;
+            this.textBoxTedarikciIletisimİsmi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxTedarikciAdres
             // 
@@ -64,6 +65,7 @@
             this.textBoxTedarikciTelefon.Name = "textBoxTedarikciTelefon";
             this.textBoxTedarikciTelefon.Size = new System.Drawing.Size(194, 22);
             this.textBoxTedarikciTelefon.TabIndex = 55;
+            this.textBoxTedarikciTelefon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // textBoxTedarikciUlke
             // 
@@ -71,6 +73,7 @@
             this.textBoxTedarikciUlke.Name = "textBoxTedarikciUlke";
             this.textBoxTedarikciUlke.Size = new System.Drawing.Size(194, 22);
             this.textBoxTedarikciUlke.TabIndex = 54;
+            this.textBoxTedarikciUlke.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxTedarikciSehir
             // 
@@ -78,6 +81,7 @@
             this.textBoxTedarikciSehir.Name = "textBoxTedarikciSehir";
             this.textBoxTedarikciSehir.Size = new System.Drawing.Size(194, 22);
             this.textBoxTedarikciSehir.TabIndex = 53;
+            this.textBoxTedarikciSehir.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // textBoxTedarikciAdi
             // 
@@ -85,6 +89,7 @@
             this.textBoxTedarikciAdi.Name = "textBoxTedarikciAdi";
             this.textBoxTedarikciAdi.Size = new System.Drawing.Size(194, 22);
             this.textBoxTedarikciAdi.TabIndex = 52;
+            this.textBoxTedarikciAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // btnIptal
             // 
@@ -190,7 +195,7 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
-            this.Controls.Add(this.txtBoxTedarikciİletisimİsmi);
+            this.Controls.Add(this.textBoxTedarikciIletisimİsmi);
             this.Controls.Add(this.textBoxTedarikciAdres);
             this.Controls.Add(this.textBoxTedarikciTelefon);
             this.Controls.Add(this.textBoxTedarikciUlke);
@@ -215,7 +220,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtBoxTedarikciİletisimİsmi;
+        private System.Windows.Forms.TextBox textBoxTedarikciIletisimİsmi;
         private System.Windows.Forms.TextBox textBoxTedarikciAdres;
         private System.Windows.Forms.TextBox textBoxTedarikciTelefon;
         private System.Windows.Forms.TextBox textBoxTedarikciUlke;

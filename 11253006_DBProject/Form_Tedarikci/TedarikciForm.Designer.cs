@@ -72,6 +72,7 @@
             this.buttonAra.TabIndex = 10;
             this.buttonAra.Text = "Ara";
             this.buttonAra.UseVisualStyleBackColor = true;
+            this.buttonAra.Visible = false;
             this.buttonAra.Click += new System.EventHandler(this.buttonAra_Click);
             // 
             // label3
@@ -89,6 +90,7 @@
             this.textBoxTedarikciSehir.Name = "textBoxTedarikciSehir";
             this.textBoxTedarikciSehir.Size = new System.Drawing.Size(120, 27);
             this.textBoxTedarikciSehir.TabIndex = 5;
+            this.textBoxTedarikciSehir.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxTedarikciİletisimİsmi
             // 
@@ -96,6 +98,7 @@
             this.textBoxTedarikciİletisimİsmi.Name = "textBoxTedarikciİletisimİsmi";
             this.textBoxTedarikciİletisimİsmi.Size = new System.Drawing.Size(104, 27);
             this.textBoxTedarikciİletisimİsmi.TabIndex = 3;
+            this.textBoxTedarikciİletisimİsmi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label2
             // 
@@ -112,6 +115,7 @@
             this.textBoxTedarikciAdi.Name = "textBoxTedarikciAdi";
             this.textBoxTedarikciAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxTedarikciAdi.TabIndex = 1;
+            this.textBoxTedarikciAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label1
             // 
@@ -142,7 +146,7 @@
             this.btnTedarikciSil.Name = "btnTedarikciSil";
             this.btnTedarikciSil.Size = new System.Drawing.Size(182, 49);
             this.btnTedarikciSil.TabIndex = 19;
-            this.btnTedarikciSil.Text = "Tedarikçi Ekle";
+            this.btnTedarikciSil.Text = "Tedarikçi Sil";
             this.btnTedarikciSil.UseVisualStyleBackColor = true;
             this.btnTedarikciSil.Click += new System.EventHandler(this.btnTedarikciSil_Click);
             // 
@@ -172,6 +176,11 @@
             // 
             // dataGridViewTedarikci
             // 
+            this.dataGridViewTedarikci.AllowUserToAddRows = false;
+            this.dataGridViewTedarikci.AllowUserToDeleteRows = false;
+            this.dataGridViewTedarikci.AllowUserToOrderColumns = true;
+            this.dataGridViewTedarikci.AllowUserToResizeColumns = false;
+            this.dataGridViewTedarikci.AllowUserToResizeRows = false;
             this.dataGridViewTedarikci.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewTedarikci.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewTedarikci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

@@ -139,6 +139,7 @@
             this.buttonAra.TabIndex = 10;
             this.buttonAra.Text = "Ara";
             this.buttonAra.UseVisualStyleBackColor = true;
+            this.buttonAra.Visible = false;
             this.buttonAra.Click += new System.EventHandler(this.buttonAra_Click);
             // 
             // label3
@@ -156,6 +157,7 @@
             this.textBoxSehir.Name = "textBoxSehir";
             this.textBoxSehir.Size = new System.Drawing.Size(120, 27);
             this.textBoxSehir.TabIndex = 5;
+            this.textBoxSehir.TextChanged += new System.EventHandler(this.textBoxSehir_TextChanged);
             // 
             // textBoxİletisimİsmi
             // 
@@ -163,6 +165,7 @@
             this.textBoxİletisimİsmi.Name = "textBoxİletisimİsmi";
             this.textBoxİletisimİsmi.Size = new System.Drawing.Size(104, 27);
             this.textBoxİletisimİsmi.TabIndex = 3;
+            this.textBoxİletisimİsmi.TextChanged += new System.EventHandler(this.textBoxSehir_TextChanged);
             // 
             // label2
             // 
@@ -179,6 +182,7 @@
             this.textBoxFirmaAdi.Name = "textBoxFirmaAdi";
             this.textBoxFirmaAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxFirmaAdi.TabIndex = 1;
+            this.textBoxFirmaAdi.TextChanged += new System.EventHandler(this.textBoxSehir_TextChanged);
             // 
             // label1
             // 

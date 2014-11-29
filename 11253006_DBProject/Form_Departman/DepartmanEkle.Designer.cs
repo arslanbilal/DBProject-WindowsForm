@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxAdi = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
+            this.btnIptal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -51,18 +52,31 @@
             this.textBoxAdi.Name = "textBoxAdi";
             this.textBoxAdi.Size = new System.Drawing.Size(188, 22);
             this.textBoxAdi.TabIndex = 1;
+            this.textBoxAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // btnEkle
             // 
             this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnEkle.Location = new System.Drawing.Point(238, 85);
+            this.btnEkle.Location = new System.Drawing.Point(20, 85);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(132, 34);
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            // 
+            // btnIptal
+            // 
+            this.btnIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnIptal.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnIptal.Location = new System.Drawing.Point(238, 85);
+            this.btnIptal.Name = "btnIptal";
+            this.btnIptal.Size = new System.Drawing.Size(132, 34);
+            this.btnIptal.TabIndex = 3;
+            this.btnIptal.Text = "İPTAL";
+            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // DepartmanEkle
             // 
@@ -72,6 +86,7 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(382, 153);
+            this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.textBoxAdi);
             this.Controls.Add(this.label1);
@@ -89,5 +104,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxAdi;
         private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.Button btnIptal;
     }
 }

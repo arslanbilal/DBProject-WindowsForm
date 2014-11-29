@@ -27,6 +27,12 @@ namespace _11253006_DBProject
             dataGridViewMusteri.MultiSelect = false;
             dataGridViewMusteri.AllowUserToResizeColumns = false;
             dataGridViewMusteri.AllowUserToResizeRows = false;
+            dataGridViewMusteri.AllowUserToAddRows = false;
+            dataGridViewMusteri.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewMusteri.AllowUserToDeleteRows = false;
+            dataGridViewMusteri.AllowUserToOrderColumns = true;
+            dataGridViewMusteri.MultiSelect = false;
+            dataGridViewMusteri.ReadOnly = true;
 
             db = new DBOperation();
             dt = new DataTable();
@@ -51,9 +57,7 @@ namespace _11253006_DBProject
 
         //! Müşteri Silme İşlemleri.
         private void btnMusteriSil_Click(object sender, EventArgs e)
-        {
-            dt = db.SelectTable(baseQuery);
-            
+        {           
             int index = dataGridViewMusteri.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dt.Rows[index][0]);
             
@@ -92,15 +96,7 @@ namespace _11253006_DBProject
         //! Müşteri Arama İşlemleri.
         private void buttonAra_Click(object sender, EventArgs e)
         {
-            string firmaAdi = textBoxFirmaAdi.Text.ToUpper();
-            string iletisimAdi = textBoxİletisimİsmi.Text.ToUpper() ;
-            string sehir = textBoxSehir.Text.ToUpper();
-
-            string appendixQuery = " WHERE customerName LIKE '%" + firmaAdi + "%' AND contactName LIKE '%" + iletisimAdi + "%' AND city LIKE '%" + sehir + "%'";
-
-            db = new DBOperation();
-            dt = db.SelectTable(baseQuery + appendixQuery);
-            dataGridViewMusteri.DataSource = dt;
+            aramaFonksiyonu();
         }
 
         //! DataGridView'i güncellenmesini Tetikler.
@@ -117,5 +113,23 @@ namespace _11253006_DBProject
             dataGridViewMusteri.Refresh();
         }
 
+        void aramaFonksiyonu()
+        {
+            string firmaAdi = textBoxFirmaAdi.Text.ToUpper();
+            string iletisimAdi = textBoxİletisimİsmi.Text.ToUpper();
+            string sehir = textBoxSehir.Text.ToUpper();
+
+            string appendixQuery = " WHERE customerName LIKE '%" + firmaAdi + "%' AND contactName LIKE '%" + iletisimAdi + "%' AND city LIKE '%" + sehir + "%'";
+
+            db = new DBOperation();
+            dt = db.SelectTable(baseQuery + appendixQuery);
+            dataGridViewMusteri.DataSource = dt;
+            dataGridViewMusteri.Refresh();
+        }
+
+        private void textBoxSehir_TextChanged(object sender, EventArgs e)
+        {
+            aramaFonksiyonu();
+        }
     }
 }

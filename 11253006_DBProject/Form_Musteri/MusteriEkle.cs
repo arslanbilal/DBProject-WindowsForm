@@ -19,20 +19,21 @@ namespace _11253006_DBProject
             InitializeComponent();
         }
 
+        //! Bu Form yüklenirken yapılan işlemler.
         private void MusteriEkle_Load(object sender, EventArgs e)
         {
             db = new DBOperation();
         }
 
+        //! Ekleme İşlemini iptal eder.
         private void btnIptal_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        //! Eklemen'n yapıldığı Fonksiyon.
+        //! Eklemenin yapıldığı Fonksiyon.
         private void btnEkle_Click(object sender, EventArgs e)
         {
-
             //INSERT INTO table_name (column1,column2,column3,...) VALUES (value1,value2,value3,...);
 
             if (textBoxFirmaAdi.Text != "" && textBoxIletisimAdi.Text != "" && textBoxAdres.Text != "" && textBoxSehir.Text != "" && textBoxUlke.Text != "" && textBoxTelefon.Text != "")
@@ -81,7 +82,7 @@ namespace _11253006_DBProject
             }
         }
 
-        //! TextBox'a sadece harf kabul eden Fonksiyon.
+        //! TextBox'a sadece harf ve 1 tane boşluk kabul eden Fonksiyon.
         private void textBoxKeyPressLetter(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) &&

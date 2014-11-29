@@ -60,14 +60,14 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(494, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(471, 105);
+            this.groupBox1.Size = new System.Drawing.Size(460, 105);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Çalışan Arama";
             // 
             // buttonAra
             // 
-            this.buttonAra.Location = new System.Drawing.Point(326, 67);
+            this.buttonAra.Location = new System.Drawing.Point(321, 67);
             this.buttonAra.Name = "buttonAra";
             this.buttonAra.Size = new System.Drawing.Size(120, 30);
             this.buttonAra.TabIndex = 10;
@@ -78,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(257, 29);
+            this.label3.Location = new System.Drawing.Point(252, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 6;
@@ -86,10 +86,11 @@
             // 
             // textBoxSehir
             // 
-            this.textBoxSehir.Location = new System.Drawing.Point(326, 24);
+            this.textBoxSehir.Location = new System.Drawing.Point(321, 24);
             this.textBoxSehir.Name = "textBoxSehir";
             this.textBoxSehir.Size = new System.Drawing.Size(120, 27);
             this.textBoxSehir.TabIndex = 5;
+            this.textBoxSehir.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxDepartman
             // 
@@ -97,6 +98,7 @@
             this.textBoxDepartman.Name = "textBoxDepartman";
             this.textBoxDepartman.Size = new System.Drawing.Size(104, 27);
             this.textBoxDepartman.TabIndex = 3;
+            this.textBoxDepartman.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label2
             // 
@@ -113,6 +115,7 @@
             this.textBoxİsciAdi.Name = "textBoxİsciAdi";
             this.textBoxİsciAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxİsciAdi.TabIndex = 1;
+            this.textBoxİsciAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label1
             // 
@@ -141,7 +144,7 @@
             this.btnCalisanSil.ForeColor = System.Drawing.Color.Firebrick;
             this.btnCalisanSil.Location = new System.Drawing.Point(101, 68);
             this.btnCalisanSil.Name = "btnCalisanSil";
-            this.btnCalisanSil.Size = new System.Drawing.Size(182, 49);
+            this.btnCalisanSil.Size = new System.Drawing.Size(191, 49);
             this.btnCalisanSil.TabIndex = 11;
             this.btnCalisanSil.Text = "Çalışan Sil";
             this.btnCalisanSil.UseVisualStyleBackColor = true;
@@ -153,7 +156,7 @@
             this.btnCalisanEkle.ForeColor = System.Drawing.Color.Firebrick;
             this.btnCalisanEkle.Location = new System.Drawing.Point(101, 12);
             this.btnCalisanEkle.Name = "btnCalisanEkle";
-            this.btnCalisanEkle.Size = new System.Drawing.Size(182, 49);
+            this.btnCalisanEkle.Size = new System.Drawing.Size(191, 49);
             this.btnCalisanEkle.TabIndex = 10;
             this.btnCalisanEkle.Text = "Çalışan  Ekle";
             this.btnCalisanEkle.UseVisualStyleBackColor = true;
@@ -203,9 +206,9 @@
             // 
             this.btnDepartman.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDepartman.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnDepartman.Location = new System.Drawing.Point(971, 25);
+            this.btnDepartman.Location = new System.Drawing.Point(960, 25);
             this.btnDepartman.Name = "btnDepartman";
-            this.btnDepartman.Size = new System.Drawing.Size(99, 92);
+            this.btnDepartman.Size = new System.Drawing.Size(110, 92);
             this.btnDepartman.TabIndex = 14;
             this.btnDepartman.Text = "Departman İşlemleri";
             this.btnDepartman.UseVisualStyleBackColor = true;
@@ -228,6 +231,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CalisanForm";
             this.Text = "ÇALIŞAN İŞLEMLERİ";
+            this.Load += new System.EventHandler(this.CalisanForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalisan)).EndInit();

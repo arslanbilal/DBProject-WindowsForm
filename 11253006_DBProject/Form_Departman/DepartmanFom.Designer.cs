@@ -42,7 +42,9 @@
             // 
             // dataGridViewDepartman
             // 
+            this.dataGridViewDepartman.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewDepartman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDepartman.GridColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewDepartman.Location = new System.Drawing.Point(12, 114);
             this.dataGridViewDepartman.Name = "dataGridViewDepartman";
             this.dataGridViewDepartman.RowTemplate.Height = 24;
@@ -84,6 +86,7 @@
             this.btnAra.TabIndex = 2;
             this.btnAra.Text = "Ara";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Visible = false;
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // label1
@@ -102,6 +105,7 @@
             this.textBoxAdi.Name = "textBoxAdi";
             this.textBoxAdi.Size = new System.Drawing.Size(114, 23);
             this.textBoxAdi.TabIndex = 0;
+            this.textBoxAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // btnSil
             // 
@@ -132,7 +136,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(482, 453);
             this.Controls.Add(this.btnGuncelle);
