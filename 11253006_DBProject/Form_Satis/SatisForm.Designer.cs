@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBoxAdet = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBoxUrunAdi = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.buttonAra = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBoxIsciAdi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxMusteriAdi = new System.Windows.Forms.TextBox();
@@ -51,13 +46,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBoxAdet);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxUrunAdi);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.buttonAra);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBoxIsciAdi);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxMusteriAdi);
@@ -66,38 +56,10 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(300, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(770, 105);
+            this.groupBox1.Size = new System.Drawing.Size(512, 105);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Arama";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(597, 23);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 24);
-            this.dateTimePicker1.TabIndex = 15;
-            this.dateTimePicker1.Value = new System.DateTime(2014, 11, 26, 0, 0, 0, 0);
-            // 
-            // textBoxAdet
-            // 
-            this.textBoxAdet.Location = new System.Drawing.Point(369, 68);
-            this.textBoxAdet.Name = "textBoxAdet";
-            this.textBoxAdet.Size = new System.Drawing.Size(117, 27);
-            this.textBoxAdet.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(261, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Adet:";
             // 
             // textBoxUrunAdi
             // 
@@ -114,25 +76,6 @@
             this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "Ürün Adı:";
-            // 
-            // buttonAra
-            // 
-            this.buttonAra.Location = new System.Drawing.Point(639, 65);
-            this.buttonAra.Name = "buttonAra";
-            this.buttonAra.Size = new System.Drawing.Size(120, 30);
-            this.buttonAra.TabIndex = 10;
-            this.buttonAra.Text = "Ara";
-            this.buttonAra.UseVisualStyleBackColor = true;
-            this.buttonAra.Click += new System.EventHandler(this.buttonAra_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(504, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Tarih:";
             // 
             // textBoxIsciAdi
             // 
@@ -259,8 +202,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button buttonAra;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxIsciAdi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxMusteriAdi;
@@ -270,10 +211,7 @@
         private System.Windows.Forms.Button btnYenile;
         private System.Windows.Forms.DataGridView dataGridViewSatis;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.TextBox textBoxAdet;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxUrunAdi;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

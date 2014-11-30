@@ -48,6 +48,7 @@
             this.textBoxUrunMiktar.Name = "textBoxUrunMiktar";
             this.textBoxUrunMiktar.Size = new System.Drawing.Size(193, 22);
             this.textBoxUrunMiktar.TabIndex = 40;
+            this.textBoxUrunMiktar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // btnIptal
             // 
@@ -171,7 +172,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
             this.Controls.Add(this.dateTimePickerTarih);

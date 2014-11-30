@@ -12,9 +12,12 @@ namespace _11253006_DBProject
 {
     public partial class SatisGuncelle : Form
     {
-        public SatisGuncelle()
+        int id;
+
+        public SatisGuncelle(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void btnEkle_Click(object sender, EventArgs e)

@@ -73,6 +73,7 @@
             this.buttonAra.TabIndex = 10;
             this.buttonAra.Text = "Ara";
             this.buttonAra.UseVisualStyleBackColor = true;
+            this.buttonAra.Visible = false;
             this.buttonAra.Click += new System.EventHandler(this.buttonAra_Click);
             // 
             // label3
