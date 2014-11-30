@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxUrunTedarikci = new System.Windows.Forms.TextBox();
             this.textBoxUrunAdet = new System.Windows.Forms.TextBox();
             this.textBoxUrunUcret = new System.Windows.Forms.TextBox();
             this.textBoxUrunAdi = new System.Windows.Forms.TextBox();
@@ -40,14 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxKategori = new System.Windows.Forms.ComboBox();
+            this.comboBoxTedarikci = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // textBoxUrunTedarikci
-            // 
-            this.textBoxUrunTedarikci.Location = new System.Drawing.Point(256, 195);
-            this.textBoxUrunTedarikci.Name = "textBoxUrunTedarikci";
-            this.textBoxUrunTedarikci.Size = new System.Drawing.Size(194, 22);
-            this.textBoxUrunTedarikci.TabIndex = 28;
             // 
             // textBoxUrunAdet
             // 
@@ -55,6 +48,7 @@
             this.textBoxUrunAdet.Name = "textBoxUrunAdet";
             this.textBoxUrunAdet.Size = new System.Drawing.Size(194, 22);
             this.textBoxUrunAdet.TabIndex = 26;
+            this.textBoxUrunAdet.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // textBoxUrunUcret
             // 
@@ -62,6 +56,7 @@
             this.textBoxUrunUcret.Name = "textBoxUrunUcret";
             this.textBoxUrunUcret.Size = new System.Drawing.Size(194, 22);
             this.textBoxUrunUcret.TabIndex = 25;
+            this.textBoxUrunUcret.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // textBoxUrunAdi
             // 
@@ -69,6 +64,7 @@
             this.textBoxUrunAdi.Name = "textBoxUrunAdi";
             this.textBoxUrunAdi.Size = new System.Drawing.Size(194, 22);
             this.textBoxUrunAdi.TabIndex = 24;
+            this.textBoxUrunAdi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressLetter);
             // 
             // btnIptal
             // 
@@ -162,6 +158,14 @@
             this.comboBoxKategori.Size = new System.Drawing.Size(194, 24);
             this.comboBoxKategori.TabIndex = 42;
             // 
+            // comboBoxTedarikci
+            // 
+            this.comboBoxTedarikci.FormattingEnabled = true;
+            this.comboBoxTedarikci.Location = new System.Drawing.Point(256, 196);
+            this.comboBoxTedarikci.Name = "comboBoxTedarikci";
+            this.comboBoxTedarikci.Size = new System.Drawing.Size(194, 24);
+            this.comboBoxTedarikci.TabIndex = 43;
+            // 
             // UrunEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,8 +173,8 @@
             this.BackgroundImage = global::_11253006_DBProject.Properties.Resources.bg2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 649);
+            this.Controls.Add(this.comboBoxTedarikci);
             this.Controls.Add(this.comboBoxKategori);
-            this.Controls.Add(this.textBoxUrunTedarikci);
             this.Controls.Add(this.textBoxUrunAdet);
             this.Controls.Add(this.textBoxUrunUcret);
             this.Controls.Add(this.textBoxUrunAdi);
@@ -192,7 +196,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxUrunTedarikci;
         private System.Windows.Forms.TextBox textBoxUrunAdet;
         private System.Windows.Forms.TextBox textBoxUrunUcret;
         private System.Windows.Forms.TextBox textBoxUrunAdi;
@@ -204,5 +207,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxKategori;
+        private System.Windows.Forms.ComboBox comboBoxTedarikci;
     }
 }

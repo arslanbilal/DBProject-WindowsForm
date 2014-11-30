@@ -181,6 +181,12 @@
     <Compile Include="Form_Urun\UrunGuncelle.Designer.cs">
       <DependentUpon>UrunGuncelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Urun\UrunTedarikEt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Urun\UrunTedarikEt.Designer.cs">
+      <DependentUpon>UrunTedarikEt.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form_Calisan\CalisanEkle.resx">
       <DependentUpon>CalisanEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Urun\UrunGuncelle.resx">
       <DependentUpon>UrunGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Urun\UrunTedarikEt.resx">
+      <DependentUpon>UrunTedarikEt.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

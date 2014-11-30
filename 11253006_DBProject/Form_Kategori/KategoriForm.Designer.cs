@@ -109,6 +109,7 @@
             // 
             // dataGridViewKategori
             // 
+            this.dataGridViewKategori.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewKategori.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewKategori.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKategori.Location = new System.Drawing.Point(12, 114);

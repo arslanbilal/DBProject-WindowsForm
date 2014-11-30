@@ -43,6 +43,7 @@
             this.dataGridViewUrun = new System.Windows.Forms.DataGridView();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnKategori = new System.Windows.Forms.Button();
+            this.btnTedarikEt = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUrun)).BeginInit();
             this.SuspendLayout();
@@ -60,20 +61,20 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
             this.groupBox1.Location = new System.Drawing.Point(494, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(471, 105);
+            this.groupBox1.Size = new System.Drawing.Size(453, 105);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün Arama";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // buttonAra
             // 
             this.buttonAra.Location = new System.Drawing.Point(336, 67);
             this.buttonAra.Name = "buttonAra";
-            this.buttonAra.Size = new System.Drawing.Size(120, 30);
+            this.buttonAra.Size = new System.Drawing.Size(107, 30);
             this.buttonAra.TabIndex = 10;
             this.buttonAra.Text = "Ara";
             this.buttonAra.UseVisualStyleBackColor = true;
+            this.buttonAra.Visible = false;
             this.buttonAra.Click += new System.EventHandler(this.buttonAra_Click);
             // 
             // label3
@@ -89,8 +90,9 @@
             // 
             this.textBoxUrunTedarikci.Location = new System.Drawing.Point(336, 24);
             this.textBoxUrunTedarikci.Name = "textBoxUrunTedarikci";
-            this.textBoxUrunTedarikci.Size = new System.Drawing.Size(120, 27);
+            this.textBoxUrunTedarikci.Size = new System.Drawing.Size(107, 27);
             this.textBoxUrunTedarikci.TabIndex = 5;
+            this.textBoxUrunTedarikci.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxUrunKategori
             // 
@@ -98,6 +100,7 @@
             this.textBoxUrunKategori.Name = "textBoxUrunKategori";
             this.textBoxUrunKategori.Size = new System.Drawing.Size(104, 27);
             this.textBoxUrunKategori.TabIndex = 3;
+            this.textBoxUrunKategori.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label2
             // 
@@ -114,6 +117,7 @@
             this.textBoxUrunAdi.Name = "textBoxUrunAdi";
             this.textBoxUrunAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxUrunAdi.TabIndex = 1;
+            this.textBoxUrunAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label1
             // 
@@ -126,11 +130,11 @@
             // 
             // btnUrunGuncelle
             // 
-            this.btnUrunGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUrunGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUrunGuncelle.ForeColor = System.Drawing.Color.Firebrick;
             this.btnUrunGuncelle.Location = new System.Drawing.Point(298, 12);
             this.btnUrunGuncelle.Name = "btnUrunGuncelle";
-            this.btnUrunGuncelle.Size = new System.Drawing.Size(182, 105);
+            this.btnUrunGuncelle.Size = new System.Drawing.Size(182, 51);
             this.btnUrunGuncelle.TabIndex = 19;
             this.btnUrunGuncelle.Text = "Ürün Güncelle";
             this.btnUrunGuncelle.UseVisualStyleBackColor = true;
@@ -138,7 +142,7 @@
             // 
             // btnUrunSil
             // 
-            this.btnUrunSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUrunSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUrunSil.ForeColor = System.Drawing.Color.Firebrick;
             this.btnUrunSil.Location = new System.Drawing.Point(101, 68);
             this.btnUrunSil.Name = "btnUrunSil";
@@ -150,7 +154,7 @@
             // 
             // btnUrunEkle
             // 
-            this.btnUrunEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnUrunEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUrunEkle.ForeColor = System.Drawing.Color.Firebrick;
             this.btnUrunEkle.Location = new System.Drawing.Point(101, 12);
             this.btnUrunEkle.Name = "btnUrunEkle";
@@ -174,6 +178,9 @@
             // 
             // dataGridViewUrun
             // 
+            this.dataGridViewUrun.AllowUserToAddRows = false;
+            this.dataGridViewUrun.AllowUserToDeleteRows = false;
+            this.dataGridViewUrun.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewUrun.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewUrun.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewUrun.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -204,13 +211,25 @@
             // 
             this.btnKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKategori.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnKategori.Location = new System.Drawing.Point(971, 25);
+            this.btnKategori.Location = new System.Drawing.Point(953, 25);
             this.btnKategori.Name = "btnKategori";
-            this.btnKategori.Size = new System.Drawing.Size(99, 92);
+            this.btnKategori.Size = new System.Drawing.Size(117, 92);
             this.btnKategori.TabIndex = 21;
             this.btnKategori.Text = "Kategori İşlemleri";
             this.btnKategori.UseVisualStyleBackColor = true;
             this.btnKategori.Click += new System.EventHandler(this.btnKategori_Click);
+            // 
+            // btnTedarikEt
+            // 
+            this.btnTedarikEt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTedarikEt.ForeColor = System.Drawing.Color.Firebrick;
+            this.btnTedarikEt.Location = new System.Drawing.Point(298, 67);
+            this.btnTedarikEt.Name = "btnTedarikEt";
+            this.btnTedarikEt.Size = new System.Drawing.Size(182, 51);
+            this.btnTedarikEt.TabIndex = 22;
+            this.btnTedarikEt.Text = "Tedarik Et";
+            this.btnTedarikEt.UseVisualStyleBackColor = true;
+            this.btnTedarikEt.Click += new System.EventHandler(this.btnTedarikEt_Click);
             // 
             // UrunForm
             // 
@@ -218,6 +237,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1082, 653);
+            this.Controls.Add(this.btnTedarikEt);
             this.Controls.Add(this.btnKategori);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUrunGuncelle);
@@ -254,5 +274,6 @@
         private System.Windows.Forms.DataGridView dataGridViewUrun;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnKategori;
+        private System.Windows.Forms.Button btnTedarikEt;
     }
 }

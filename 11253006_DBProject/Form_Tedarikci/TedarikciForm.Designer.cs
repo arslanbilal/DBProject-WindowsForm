@@ -181,6 +181,7 @@
             this.dataGridViewTedarikci.AllowUserToOrderColumns = true;
             this.dataGridViewTedarikci.AllowUserToResizeColumns = false;
             this.dataGridViewTedarikci.AllowUserToResizeRows = false;
+            this.dataGridViewTedarikci.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTedarikci.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewTedarikci.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewTedarikci.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

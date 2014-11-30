@@ -204,6 +204,7 @@
             // 
             // dataGridViewSatis
             // 
+            this.dataGridViewSatis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewSatis.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewSatis.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewSatis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

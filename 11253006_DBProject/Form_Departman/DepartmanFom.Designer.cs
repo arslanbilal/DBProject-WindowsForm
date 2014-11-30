@@ -42,6 +42,7 @@
             // 
             // dataGridViewDepartman
             // 
+            this.dataGridViewDepartman.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewDepartman.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewDepartman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDepartman.GridColor = System.Drawing.SystemColors.InactiveCaption;

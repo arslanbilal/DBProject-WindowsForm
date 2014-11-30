@@ -53,6 +53,7 @@
             this.dataGridViewMusteri.AllowUserToOrderColumns = true;
             this.dataGridViewMusteri.AllowUserToResizeColumns = false;
             this.dataGridViewMusteri.AllowUserToResizeRows = false;
+            this.dataGridViewMusteri.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewMusteri.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dataGridViewMusteri.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewMusteri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

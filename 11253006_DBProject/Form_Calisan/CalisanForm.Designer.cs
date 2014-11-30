@@ -176,6 +176,7 @@
             // 
             // dataGridViewCalisan
             // 
+            this.dataGridViewCalisan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCalisan.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dataGridViewCalisan.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewCalisan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
