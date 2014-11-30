@@ -90,7 +90,7 @@ namespace _11253006_DBProject
             string musteriAdi = textBoxMusteriAdi.Text.ToUpper();
             string urunAdi = textBoxUrunAdi.Text.ToUpper();
 
-            string appendixQuery = " WHERE C.customerName LIKE '%" + isciAdi + "%' AND E.employeeName LIKE '%" + musteriAdi + "%' AND P.productName LIKE '%" + urunAdi + "%'";
+            string appendixQuery = " WHERE C.customerName LIKE '%" + musteriAdi + "%' AND E.employeeName LIKE '%" +isciAdi + "%' AND P.productName LIKE '%" + urunAdi + "%'";
 
             db = new DBOperation();
             dt = db.SelectTable(baseQuery + appendixQuery);

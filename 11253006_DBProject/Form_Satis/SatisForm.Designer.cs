@@ -67,6 +67,7 @@
             this.textBoxUrunAdi.Name = "textBoxUrunAdi";
             this.textBoxUrunAdi.Size = new System.Drawing.Size(117, 27);
             this.textBoxUrunAdi.TabIndex = 12;
+            this.textBoxUrunAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label5
             // 
@@ -83,6 +84,7 @@
             this.textBoxIsciAdi.Name = "textBoxIsciAdi";
             this.textBoxIsciAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxIsciAdi.TabIndex = 3;
+            this.textBoxIsciAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label2
             // 
@@ -99,6 +101,7 @@
             this.textBoxMusteriAdi.Name = "textBoxMusteriAdi";
             this.textBoxMusteriAdi.Size = new System.Drawing.Size(104, 27);
             this.textBoxMusteriAdi.TabIndex = 1;
+            this.textBoxMusteriAdi.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // label1
             // 

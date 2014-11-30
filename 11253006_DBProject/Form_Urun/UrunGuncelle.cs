@@ -30,6 +30,8 @@ namespace _11253006_DBProject
         {
             db = new DBOperation();
             dt = new DataTable();
+            dtComboBoxTedarikci = new DataTable();
+            dtComboBoxKategori = new DataTable();
 
             string query = "SELECT * FROM tblProducts WHERE productID=" + id;
             dt = db.SelectTable(query);
