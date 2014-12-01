@@ -34,7 +34,6 @@
             this.btnSatis = new System.Windows.Forms.Button();
             this.btnTedarikci = new System.Windows.Forms.Button();
             this.btnMusteri = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnYararli
@@ -109,26 +108,13 @@
             this.btnMusteri.UseVisualStyleBackColor = true;
             this.btnMusteri.Click += new System.EventHandler(this.btnMusteri_Click);
             // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnAdmin.ForeColor = System.Drawing.Color.Firebrick;
-            this.btnAdmin.Location = new System.Drawing.Point(678, 459);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(150, 75);
-            this.btnAdmin.TabIndex = 7;
-            this.btnAdmin.Text = "ADMİN GİRİŞİ";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(842, 548);
-            this.Controls.Add(this.btnAdmin);
+            this.ClientSize = new System.Drawing.Size(842, 485);
             this.Controls.Add(this.btnMusteri);
             this.Controls.Add(this.btnTedarikci);
             this.Controls.Add(this.btnSatis);
@@ -151,7 +137,6 @@
         private System.Windows.Forms.Button btnSatis;
         private System.Windows.Forms.Button btnTedarikci;
         private System.Windows.Forms.Button btnMusteri;
-        private System.Windows.Forms.Button btnAdmin;
     }
 }
 

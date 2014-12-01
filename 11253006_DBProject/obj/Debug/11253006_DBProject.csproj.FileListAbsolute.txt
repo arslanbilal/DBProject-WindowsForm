@@ -29,3 +29,4 @@ C:\Users\Bilal\Documents\Visual Studio 2012\Projects\11253006_DBProject\11253006
 C:\Users\Bilal\Documents\Visual Studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\_11253006_DBProject.SatisForm.resources
 C:\Users\Bilal\Documents\Visual Studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\_11253006_DBProject.SatisGuncelle.resources
 C:\Users\Bilal\Documents\Visual Studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\_11253006_DBProject.UrunTedarikEt.resources
+C:\Users\Bilal\Documents\Visual Studio 2012\Projects\11253006_DBProject\11253006_DBProject\obj\Debug\_11253006_DBProject.YararliTablolar.resources

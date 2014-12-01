@@ -14,7 +14,7 @@ namespace _11253006_DBProject
     {
         DBOperation db;
         DataTable dt;
-        string baseQuery = "SELECT E.employeeID,E.employeeName,E.birthDate,E.salary,D.departmanName,E.joinDate,E.city FROM tblEmployees E INNER JOIN tblDepartmans D ON D.departmanID=E.departmanID";
+        string baseQuery = "SELECT E.employeeID[ID],E.employeeName[ÇALIŞAN ADI],E.birthDate[DOĞUM TARİHİ],E.salary[MAAŞI],D.departmanName[DEPARTMAN ADI],E.joinDate[GİRİŞ TARİHİ],E.city[ŞEHİR] FROM tblEmployees E INNER JOIN tblDepartmans D ON D.departmanID=E.departmanID";
 
         public CalisanForm()
         {
@@ -25,7 +25,7 @@ namespace _11253006_DBProject
         private void CalisanForm_Load(object sender, EventArgs e)
         {
             dataGridViewCalisan.MultiSelect = false;
-            dataGridViewCalisan.AllowUserToResizeColumns = false;
+            dataGridViewCalisan.AllowUserToResizeColumns = true;
             dataGridViewCalisan.AllowUserToResizeRows = false;
             dataGridViewCalisan.AllowUserToAddRows = false;
             dataGridViewCalisan.SelectionMode = DataGridViewSelectionMode.FullRowSelect;

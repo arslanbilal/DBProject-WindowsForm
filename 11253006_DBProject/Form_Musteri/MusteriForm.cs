@@ -14,7 +14,7 @@ namespace _11253006_DBProject
     {
         DBOperation db;
         DataTable dt;
-        string baseQuery = "SELECT * FROM tblCustomers";
+        string baseQuery = "SELECT customerID[ID], customerName[MÜŞTERİ ADI], contactName[İLETİŞİM ADI], address[ADRES], city[ŞEHİR], country[ÜLKE], Phone[TELEFON] FROM tblCustomers";
 
         public MusteriForm()
         {

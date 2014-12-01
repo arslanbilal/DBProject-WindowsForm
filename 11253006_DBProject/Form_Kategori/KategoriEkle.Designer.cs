@@ -66,7 +66,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Kategori Adi:";
+            this.label1.Text = "Kategori Adı:";
             // 
             // textBoxAciklama
             // 

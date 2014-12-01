@@ -14,7 +14,7 @@ namespace _11253006_DBProject
     {
         DBOperation db;
         DataTable dt;
-        string baseQuery = "SELECT * FROM tblDepartmans";
+        string baseQuery = "SELECT departmanID[ID],departmanName[DEPARTMAN ADI] FROM tblDepartmans";
 
         public DepartmanFom()
         {

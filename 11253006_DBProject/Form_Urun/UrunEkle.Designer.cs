@@ -122,9 +122,9 @@
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
             this.label5.Location = new System.Drawing.Point(29, 192);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 25);
+            this.label5.Size = new System.Drawing.Size(134, 25);
             this.label5.TabIndex = 18;
-            this.label5.Text = "TEDARİKÇİSİ:";
+            this.label5.Text = "TEDARİKÇİ:";
             // 
             // label4
             // 

@@ -14,7 +14,7 @@ namespace _11253006_DBProject
     {
         DBOperation db;
         DataTable dt;
-        string baseQuery = "SELECT * FROM tblCategories";
+        string baseQuery = "SELECT categoryID[ID],categoryName[KATEGORİ ADI],description[AÇIKLAMA] FROM tblCategories";
 
         public KategoriForm()
         {

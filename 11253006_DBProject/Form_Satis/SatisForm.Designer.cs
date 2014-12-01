@@ -91,9 +91,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "İşçi Adı:";
+            this.label2.Text = "Çalışan Adı:";
             // 
             // textBoxMusteriAdi
             // 

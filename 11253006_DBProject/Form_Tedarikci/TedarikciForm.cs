@@ -14,7 +14,7 @@ namespace _11253006_DBProject
     {
         DBOperation db;
         DataTable dt;
-        string baseQuery = "SELECT * FROM tblSuppliers";
+        string baseQuery = "SELECT supplierID[ID], supplierName[TEDARİKÇİ ADI], contactName[İLETİŞİM ADI], address[ADRES], city[ŞEHİR], country[ÜLKE], phone[TELEFON] FROM tblSuppliers";
 
         public TedarikciForm()
         {

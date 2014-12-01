@@ -88,9 +88,9 @@
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
             this.label6.Location = new System.Drawing.Point(12, 115);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 25);
+            this.label6.Size = new System.Drawing.Size(152, 25);
             this.label6.TabIndex = 5;
-            this.label6.Text = "İLETİŞİM İSMİ:";
+            this.label6.Text = "İLETİŞİM ADI:";
             // 
             // label2
             // 

@@ -61,17 +61,14 @@ namespace _11253006_DBProject
         // Yararlı Tablolar Ekranına Geçişi Sağlar.
         private void btnYararli_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Yararlı Tablolar");
-        }
-
-        // Admin Ekranına Geçişi Sağlar.
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Admin Ekranı");
+            YararliTablolar yararliTablolar = new YararliTablolar();
+            yararliTablolar.Tag = this;
+            yararliTablolar.ShowDialog();
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+
         }
 
     }

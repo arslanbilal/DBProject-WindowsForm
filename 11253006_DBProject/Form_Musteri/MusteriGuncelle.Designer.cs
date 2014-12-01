@@ -147,9 +147,9 @@
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
             this.label6.Location = new System.Drawing.Point(12, 115);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(161, 25);
+            this.label6.Size = new System.Drawing.Size(152, 25);
             this.label6.TabIndex = 19;
-            this.label6.Text = "İLETİŞİM İSMİ:";
+            this.label6.Text = "İLETİŞİM ADI:";
             // 
             // label5
             // 
@@ -210,7 +210,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MusteriGuncelle";
-            this.Text = "MusteriGuncelle";
+            this.Text = "MÜŞTERİ GÜNCELLE";
             this.Load += new System.EventHandler(this.MusteriGuncelle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
