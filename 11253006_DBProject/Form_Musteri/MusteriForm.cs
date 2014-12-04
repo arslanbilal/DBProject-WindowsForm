@@ -62,21 +62,42 @@ namespace _11253006_DBProject
             int id = Convert.ToInt32(dt.Rows[index][0]);
             
             string query = "DELETE FROM tblCustomers where customerID = " + id;
+            string check = "Select COUNT(*) from tblOrders where customerID=" + id;
 
-            if (MessageBox.Show("Emin misiniz?", "Onay", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if(db.RunCommand(check) <= 0)
             {
-                if (db.RunCommand(query) > 0)
+                if (MessageBox.Show("Emin misiniz?", "Onay", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Silme İşlemi Gerçekleti.");
-                    updateTable();
+                    if (db.RunCommand(query) > 0)
+                    {
+                        MessageBox.Show("Silme İşlemi Gerçekleti.");
+                        updateTable();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Silme işleminde Hata Oluştu!");
+                    }
                 }
                 else
-                {
-                    MessageBox.Show("Silme işleminde Hata Oluştu!");
-                }
+                { }
             }
             else
-            { }
+            {
+                if (MessageBox.Show("Müşteri Satış işlemi yapmıştır. Emin misiniz?", "Onay", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    if (db.RunCommand(query) > 0)
+                    {
+                        MessageBox.Show("Silme İşlemi Gerçekleti.");
+                        updateTable();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Silme işleminde Hata Oluştu!");
+                    }
+                }
+                else
+                { }
+            }
         }
 
         //! Müşteri Güncelleme İşmeleri -> MusteriGuncelle Form'una gider.

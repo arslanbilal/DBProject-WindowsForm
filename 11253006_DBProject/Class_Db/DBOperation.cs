@@ -62,7 +62,7 @@ namespace _11253006_DBProject
                 connection.Close();
             }
             catch (Exception)
-            {
+            { 
                 numberOfRows = -1;
                 connection.Close();
                 throw;
