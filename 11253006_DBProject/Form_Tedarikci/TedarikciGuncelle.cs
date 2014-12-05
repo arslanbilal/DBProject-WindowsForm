@@ -59,7 +59,7 @@ namespace _11253006_DBProject
                         "',phone='" + textBoxTedarikciTelefon.Text.Trim() +
                         "' WHERE supplierID=" + id;
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -71,8 +71,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Güncelleme İşleminde Hata Oluştu!");
                     }
                 }
-                else
-                { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanları Doldurunuz!!!");
             }
         }
 

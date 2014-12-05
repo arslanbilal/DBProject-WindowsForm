@@ -18,7 +18,7 @@ namespace _11253006_DBProject
         }
 
 
-        // Müşteri Ekranına Geçişi Sağlar.
+        //! Müşteri Ekranına Geçişi Sağlar.
         private void btnMusteri_Click(object sender, EventArgs e)
         {
             MusteriForm musteriForm = new MusteriForm();
@@ -26,7 +26,7 @@ namespace _11253006_DBProject
             musteriForm.ShowDialog(this);
         }
 
-        // İşçi Ekranına Geçişi Sağlar.
+        //! İşçi Ekranına Geçişi Sağlar.
         private void btnIsci_Click(object sender, EventArgs e)
         {
             CalisanForm calısanForm = new CalisanForm();
@@ -34,7 +34,7 @@ namespace _11253006_DBProject
             calısanForm.ShowDialog(this);
         }
 
-        // Ürün Ekranına Geçişi Sağlar.
+        //! Ürün Ekranına Geçişi Sağlar.
         private void btnUrun_Click(object sender, EventArgs e)
         {
             UrunForm urunForm = new UrunForm();
@@ -42,7 +42,7 @@ namespace _11253006_DBProject
             urunForm.ShowDialog(this);
         }
 
-        // Tedarikçi Ekranına Geçişi Sağlar.
+        //! Tedarikçi Ekranına Geçişi Sağlar.
         private void btnTedarikci_Click(object sender, EventArgs e)
         {
             TedarikciForm tedarikciForm = new TedarikciForm();
@@ -50,7 +50,7 @@ namespace _11253006_DBProject
             tedarikciForm.ShowDialog();
         }
 
-        // Satış Ekranına Geçişi Sağlar.
+        //! Satış Ekranına Geçişi Sağlar.
         private void btnSatis_Click(object sender, EventArgs e)
         {
             SatisForm satisFrom = new SatisForm();
@@ -58,17 +58,12 @@ namespace _11253006_DBProject
             satisFrom.ShowDialog(); 
         }
 
-        // Yararlı Tablolar Ekranına Geçişi Sağlar.
+        //! Yararlı Tablolar Ekranına Geçişi Sağlar.
         private void btnYararli_Click(object sender, EventArgs e)
         {
             YararliTablolar yararliTablolar = new YararliTablolar();
             yararliTablolar.Tag = this;
             yararliTablolar.ShowDialog();
-        }
-
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-
         }
 
     }

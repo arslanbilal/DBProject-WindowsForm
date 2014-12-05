@@ -45,6 +45,8 @@ namespace _11253006_DBProject
             //string birtDate = String.Format("{0:yyyy-MM-dd}", dt.Rows[0][2].ToString());
             //MessageBox.Show(birtDate);
 
+            //string orderDate = String.Format("{0:yyyy-MM-dd}", dateTimePickerTarih.Value);
+
             //string[] birth = dt.Rows[0][2].ToString().Split('-');
             //string[] join = dt.Rows[0][5].ToString().Split('-');
 
@@ -90,7 +92,7 @@ namespace _11253006_DBProject
                         "',city='" + textBoxSehir.Text.Trim() +
                         "' WHERE employeeID=" + id;
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -104,6 +106,10 @@ namespace _11253006_DBProject
                 }
                 else
                 { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Tüm Alanları Doldurunuz!!!");
             }
         }
 

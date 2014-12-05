@@ -75,7 +75,7 @@ namespace _11253006_DBProject
                         ",price=" + textBoxUrunUcret.Text.ToString() +
                         " WHERE productID=" + id;
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -87,8 +87,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Güncelleme İşleminde Hata Oluştu!");
                     }
                 }
-                else
-                { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanları Doldurunuz!!!");
             }
         }
 
@@ -97,7 +99,6 @@ namespace _11253006_DBProject
         {
             this.Close();
         }
-
 
         //! TextBox'a sadece rakam kabul eden Fonksiyon.
         private void textBoxKeyPressNumber(object sender, KeyPressEventArgs e)

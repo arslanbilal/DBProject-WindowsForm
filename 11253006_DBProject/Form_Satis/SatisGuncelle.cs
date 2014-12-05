@@ -73,7 +73,10 @@ namespace _11253006_DBProject
             // UPDATE table_name SET column1=value1,column2=value2,... WHERE some_column=some_value;
             int sonMiktar = Convert.ToInt32(textBoxUrunMiktar.Text.ToString());
 
-            if (textBoxUrunMiktar.Text != "")
+            if (textBoxUrunMiktar.Text != "" &&
+                comboBoxCalisanAdi.SelectedIndex > 0 &&
+                comboBoxMusteriAdi.SelectedIndex > 0 &&
+                comboBoxUrunAdi.SelectedIndex > 0)
             {
                 if (urunKontrolEt(Convert.ToInt32(dt.Rows[0][3].ToString()), this.adet-sonMiktar))
                 {
@@ -90,10 +93,14 @@ namespace _11253006_DBProject
 
                         string query2 = "UPDATE tblProducts SET quantity=quantity+" + (this.adet - sonMiktar).ToString() + " WHERE productID=" + comboBoxUrunAdi.SelectedValue.ToString();
 
-                        MessageBox.Show(query);
-                        MessageBox.Show(query2);
+                        //MessageBox.Show(query);
+                        //MessageBox.Show(query2);
 
-                        if (db.RunCommand(query) > 0 && db.RunCommand(query2) > 0)
+                        string lastQueryWithTransaction = String.Format("BEGIN TRY\nBEGIN TRAN\n{0}\n{1}\nCOMMIT TRAN\nEND TRY\nBEGIN CATCH\nROLLBACK TRAN\nEND CATCH", query, query2);
+
+                        MessageBox.Show("Kullanılan Transaction : \n\n\n" + lastQueryWithTransaction);
+
+                        if (db.RunCommand(lastQueryWithTransaction) > 0)
                         {
                             MessageBox.Show("Güncelleme İşlemi Gerçekleşti");
                             this.Close();
@@ -114,6 +121,13 @@ namespace _11253006_DBProject
 
                 }
             }
+            else
+            {
+                if (textBoxUrunMiktar.Text != "")
+                    MessageBox.Show("Lütfen Boş Alanları Doldurunuz!!!");
+                else
+                    MessageBox.Show("Lütfen Seçeneklerden Birini Seçiniz.\nSeçenek yoksa; önce seçenek ekleyiniz.");
+            }
         }
 
         //! Urun stok durum kontrol
@@ -127,7 +141,6 @@ namespace _11253006_DBProject
             }
             return false;
         }
-
 
         //! Güncelleme işlemini iptal eder.
         private void btnIptal_Click(object sender, EventArgs e)

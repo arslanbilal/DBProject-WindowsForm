@@ -57,7 +57,7 @@ namespace _11253006_DBProject
                         joinDate + "','" +
                         textBoxSehir.Text.ToUpper().Trim() + "')";
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -71,6 +71,10 @@ namespace _11253006_DBProject
                 }
                 else
                 { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Tüm Alanları Doldurunuz!!!");
             }
         }
 

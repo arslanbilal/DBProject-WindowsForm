@@ -36,7 +36,7 @@ namespace _11253006_DBProject
                         textBoxAdi.Text.ToUpper().Trim() + "','" +
                         textBoxAciklama.Text.ToUpper().Trim() + "')";
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -48,6 +48,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Ekleme İşleminde Hata Oluştu!");
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanı Doldurunuz!!!");
             }
         }
 

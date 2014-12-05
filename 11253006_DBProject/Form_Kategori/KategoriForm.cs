@@ -69,8 +69,6 @@ namespace _11253006_DBProject
                     MessageBox.Show("Silme işleminde Hata Oluştu!");
                 }
             }
-            else
-            { }
         }
 
         //! Kategori Güncelleme İşlemleri -> KategoriGuncelle Form'una gider.

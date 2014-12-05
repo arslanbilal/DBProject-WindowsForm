@@ -65,7 +65,7 @@ namespace _11253006_DBProject
                         "',Phone='" + textBoxTelefon.Text.Trim() + 
                         "' WHERE customerID=" + id;
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -76,9 +76,11 @@ namespace _11253006_DBProject
                     {
                         MessageBox.Show("Güncelleme İşleminde Hata Oluştu!");
                     }
-                }
-                else
-                {}   
+                }  
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Tüm Alanları Doldurunuz!!!");
             }
         }
 

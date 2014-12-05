@@ -67,8 +67,8 @@ namespace _11253006_DBProject
                             Convert.ToInt32(textBoxUrunMiktar.Text.ToString()) + 
                             " WHERE productID=" + Convert.ToInt32(comboBoxUrunAdi.SelectedValue.ToString());
 
-                        MessageBox.Show(query);
-                        MessageBox.Show(sorgucuk);
+                        //MessageBox.Show(query);
+                        //MessageBox.Show(sorgucuk);
 
                         if (db.RunCommand(sorgucuk) > 0 && db.RunCommand(query) > 0)
                         {
@@ -80,13 +80,15 @@ namespace _11253006_DBProject
                             MessageBox.Show("Ekleme İşleminde Hata Oluştu!");
                         }
                     }
-                    else
-                    { }
                 }
                 else
                 {
                         MessageBox.Show("Stokta Bulunan Üründen Fazla Girdiniz!");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanı Doldurunuz!!!");
             }
         }
 
@@ -94,12 +96,24 @@ namespace _11253006_DBProject
         bool urunKontrolEt(int id)
         {
             string sorgucuk = "SELECT quantity FROM tblProducts WHERE productID=" + id;
-            dt = db.SelectTable(sorgucuk);
-            if (Convert.ToInt32(dt.Rows[0][0].ToString()) >= Convert.ToInt32(textBoxUrunMiktar.Text.ToString()))
+            try
             {
-                return true;
+                dt = db.SelectTable(sorgucuk);
+                if (Convert.ToInt32(dt.Rows[0][0].ToString()) >= Convert.ToInt32(textBoxUrunMiktar.Text.ToString()))
+                {
+                    return true;
+                    
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ürün Stok Kontrolunde Bir Sorun Oluştu!");
+                //throw;
             }
             return false;
+
+            
         }
 
         //! Ekleme işini iptal eder.

@@ -58,7 +58,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Tedarik İşleminde Hata Oluştu!");
                     }
                 }
-                else { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanı Doldurunuz!!!");
             }
         }
 

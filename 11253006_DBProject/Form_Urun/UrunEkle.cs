@@ -60,7 +60,7 @@ namespace _11253006_DBProject
                         textBoxUrunAdet.Text.ToString() + "," +
                         textBoxUrunUcret.Text.ToString() + ")";
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -72,8 +72,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Ekleme İşleminde Hata Oluştu!");
                     }
                 }
-                else
-                { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanları Doldurunuz!!!");
             }
         }
 

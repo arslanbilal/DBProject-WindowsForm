@@ -46,7 +46,7 @@ namespace _11253006_DBProject
                         textBoxAdi.Text.ToUpper().Trim() + "'," +
                         "description='" + textBoxAciklama.Text.ToUpper().Trim() + "' WHERE categoryID=" + id;
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -58,6 +58,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Güncelleme İşleminde Hata Oluştu!");
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Tüm Alanları Doldurunuz!!!");
             }
         }
 

@@ -42,9 +42,9 @@ namespace _11253006_DBProject
             {
                 sqlDa.Fill(dt);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                
+                MessageBox.Show("Hata oluştu. Nedeni: \n" + e.ToString());
                 throw;
             }
             connection.Close();

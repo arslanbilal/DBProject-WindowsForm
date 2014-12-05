@@ -50,6 +50,7 @@ namespace _11253006_DBProject
             btn2();
         }
 
+        //! Oluşturulan view'i gösterir. Stokta 200den az olan ürünler.
         void btn1()
         {
             query = "SELECT * FROM vwUnderStok";
@@ -59,6 +60,7 @@ namespace _11253006_DBProject
             dataGridViewTablo.DataSource = dt;
         }
 
+        //! Özel bir sorgu gösterir. Departmanlarda Bulunan Çalışan Sayısı.
         void btn2()
         {
             query = "SELECT D.departmanName[DEPARTMAN ADI], COUNT(D.departmanName)[KİŞİ SAYISI] FROM tblEmployees E INNER JOIN tblDepartmans D ON D.departmanID=E.departmanID GROUP BY D.departmanName";

@@ -19,7 +19,6 @@ namespace _11253006_DBProject
             InitializeComponent();
         }
 
-
         private void TedarikciEkle_Load(object sender, EventArgs e)
         {
             db = new DBOperation();
@@ -42,7 +41,7 @@ namespace _11253006_DBProject
                         textBoxTedarikciUlke.Text.ToUpper().Trim() + "','" +
                         textBoxTedarikciTelefon.Text.Trim() + "')";
 
-                    MessageBox.Show(query);
+                    //MessageBox.Show(query);
 
                     if (db.RunCommand(query) > 0)
                     {
@@ -54,8 +53,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Ekleme İşleminde Hata Oluştu!");
                     }
                 }
-                else
-                { }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Boş Alanları Doldurunuz!!!");
             }
         }
 
