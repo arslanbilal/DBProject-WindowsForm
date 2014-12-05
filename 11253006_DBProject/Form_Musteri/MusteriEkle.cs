@@ -40,7 +40,7 @@ namespace _11253006_DBProject
             {
                 if (MessageBox.Show("Emin misiniz?", "Onay", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    string query = "INSERT INTO tblCustomers (customerName,contactName,address,city,country,Phone) VALUES ('" +
+                    string query = "INSERT INTO tblCustomers (customerName,contactName,address,city,country,phone) VALUES ('" +
                         textBoxFirmaAdi.Text.ToUpper().Trim() + "','" +
                         textBoxIletisimAdi.Text.ToUpper().Trim() + "','" +
                         textBoxAdres.Text.ToUpper().Trim() + "','" +

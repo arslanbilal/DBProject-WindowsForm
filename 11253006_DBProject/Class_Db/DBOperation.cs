@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 
+//using System.ComponentModel;
+//using System.Drawing;
+using System.Windows.Forms;
+
 namespace _11253006_DBProject
 {
     class DBOperation
@@ -61,11 +65,12 @@ namespace _11253006_DBProject
                 numberOfRows = sqlCmd.ExecuteNonQuery();
                 connection.Close();
             }
-            catch (Exception)
+            catch (Exception e)
             { 
                 numberOfRows = -1;
                 connection.Close();
-                throw;
+                //throw;
+                MessageBox.Show("Hata oluştu. Nedeni: \n" + e.ToString());
             }
 
             return numberOfRows;
