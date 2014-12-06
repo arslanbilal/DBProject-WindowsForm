@@ -70,7 +70,9 @@ namespace _11253006_DBProject
                     }
                 }
                 else
-                { }
+                {
+                    this.Close();
+                }
             }
             else
             {

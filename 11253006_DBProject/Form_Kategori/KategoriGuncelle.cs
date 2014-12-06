@@ -58,6 +58,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Güncelleme İşleminde Hata Oluştu!");
                     }
                 }
+                else
+                {
+                    this.Close();
+                }
             }
             else
             {

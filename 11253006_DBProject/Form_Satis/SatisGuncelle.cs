@@ -74,9 +74,9 @@ namespace _11253006_DBProject
             int sonMiktar = Convert.ToInt32(textBoxUrunMiktar.Text.ToString());
 
             if (textBoxUrunMiktar.Text != "" &&
-                comboBoxCalisanAdi.SelectedIndex > 0 &&
-                comboBoxMusteriAdi.SelectedIndex > 0 &&
-                comboBoxUrunAdi.SelectedIndex > 0)
+                comboBoxCalisanAdi.SelectedIndex >= 0 &&
+                comboBoxMusteriAdi.SelectedIndex >= 0 &&
+                comboBoxUrunAdi.SelectedIndex >= 0)
             {
                 if (urunKontrolEt(Convert.ToInt32(dt.Rows[0][3].ToString()), this.adet-sonMiktar))
                 {
@@ -111,7 +111,9 @@ namespace _11253006_DBProject
                         }
                     }
                     else
-                    { }
+                    {
+                        this.Close();
+                    }
                 }
                 else
                 {
@@ -123,7 +125,7 @@ namespace _11253006_DBProject
             }
             else
             {
-                if (textBoxUrunMiktar.Text != "")
+                if (textBoxUrunMiktar.Text == "")
                     MessageBox.Show("Lütfen Boş Alanları Doldurunuz!!!");
                 else
                     MessageBox.Show("Lütfen Seçeneklerden Birini Seçiniz.\nSeçenek yoksa; önce seçenek ekleyiniz.");

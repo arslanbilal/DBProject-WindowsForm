@@ -52,6 +52,7 @@
             // 
             // comboBoxUrunAdi
             // 
+            this.comboBoxUrunAdi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUrunAdi.FormattingEnabled = true;
             this.comboBoxUrunAdi.Location = new System.Drawing.Point(185, 7);
             this.comboBoxUrunAdi.Name = "comboBoxUrunAdi";

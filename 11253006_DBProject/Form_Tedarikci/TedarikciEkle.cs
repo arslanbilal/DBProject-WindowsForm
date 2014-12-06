@@ -53,6 +53,10 @@ namespace _11253006_DBProject
                         MessageBox.Show("Ekleme İşleminde Hata Oluştu!");
                     }
                 }
+                else
+                {
+                    this.Close();
+                }
             }
             else
             {

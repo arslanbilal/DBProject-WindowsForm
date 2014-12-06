@@ -53,6 +53,7 @@
             // 
             // comboBoxUrunAdi
             // 
+            this.comboBoxUrunAdi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUrunAdi.FormattingEnabled = true;
             this.comboBoxUrunAdi.Location = new System.Drawing.Point(256, 193);
             this.comboBoxUrunAdi.Name = "comboBoxUrunAdi";
@@ -61,6 +62,7 @@
             // 
             // comboBoxCalisanAdi
             // 
+            this.comboBoxCalisanAdi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCalisanAdi.FormattingEnabled = true;
             this.comboBoxCalisanAdi.Location = new System.Drawing.Point(256, 113);
             this.comboBoxCalisanAdi.Name = "comboBoxCalisanAdi";
@@ -69,6 +71,7 @@
             // 
             // comboBoxMusteriAdi
             // 
+            this.comboBoxMusteriAdi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMusteriAdi.FormattingEnabled = true;
             this.comboBoxMusteriAdi.Location = new System.Drawing.Point(256, 33);
             this.comboBoxMusteriAdi.Name = "comboBoxMusteriAdi";
@@ -81,6 +84,7 @@
             this.textBoxUrunMiktar.Name = "textBoxUrunMiktar";
             this.textBoxUrunMiktar.Size = new System.Drawing.Size(193, 22);
             this.textBoxUrunMiktar.TabIndex = 56;
+            this.textBoxUrunMiktar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKeyPressNumber);
             // 
             // btnIptal
             // 

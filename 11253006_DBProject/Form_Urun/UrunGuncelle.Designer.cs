@@ -152,6 +152,7 @@
             // 
             // comboBoxKategori
             // 
+            this.comboBoxKategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxKategori.FormattingEnabled = true;
             this.comboBoxKategori.Location = new System.Drawing.Point(256, 112);
             this.comboBoxKategori.Name = "comboBoxKategori";
@@ -160,6 +161,7 @@
             // 
             // comboBoxTedarikci
             // 
+            this.comboBoxTedarikci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTedarikci.FormattingEnabled = true;
             this.comboBoxTedarikci.Location = new System.Drawing.Point(256, 192);
             this.comboBoxTedarikci.Name = "comboBoxTedarikci";
