@@ -106,7 +106,7 @@
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(150, 75);
             this.btnEkle.TabIndex = 54;
-            this.btnEkle.Text = "EKLE";
+            this.btnEkle.Text = "GÜNCELLE";
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
